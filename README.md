@@ -1,16 +1,19 @@
-### Hi there 👋 I'm Leandro
-
 <div id="header" align="center">
+
+## Hi there 👋 I'm Leandro
+
+
 <a href="https://www.linkedin.com/in/leandro-carlini" rel="nofollow"><img src="https://camo.githubusercontent.com/e0278098417dddf9727cfee70a5eb84af38a20705b3bded56cf91cb5feb29d7d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c696e6b6564496e2d626c75653f7374796c653d666f722d7468652d6261646765266c6f676f3d6c696e6b6564696e266c6f676f436f6c6f723d7768697465" alt="LinkedIn Badge" data-canonical-src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" style="max-width: 100%;"></a>
   
-<a href="https://www.buymeacoffee.com/leandrocarS" rel="nofollow"><img src="https://camo.githubusercontent.com/3ba8042b343d12b84b85d2e6563376af4150f9cd09e72428349c1656083c8b5a/68747470733a2f2f63646e2e6275796d6561636f666665652e636f6d2f627574746f6e732f64656661756c742d6f72616e67652e706e67" alt="Buy Me A Coffee" height="41" width="174" data-canonical-src="https://cdn.buymeacoffee.com/buttons/default-orange.png" style="max-width: 100%;"></a>
+<!--<a href="https://www.buymeacoffee.com/leandrocarS" rel="nofollow"><img src="https://camo.githubusercontent.com/3ba8042b343d12b84b85d2e6563376af4150f9cd09e72428349c1656083c8b5a/68747470733a2f2f63646e2e6275796d6561636f666665652e636f6d2f627574746f6e732f64656661756c742d6f72616e67652e706e67" alt="Buy Me A Coffee" height="41" width="174" data-canonical-src="https://cdn.buymeacoffee.com/buttons/default-orange.png" style="max-width: 100%;"></a>-->
   
  <p align="center" dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/303a63322c7738ddb3025be1aaf29114573a7aee6e9e719caddaa9f838517d86/68747470733a2f2f6b6f6d617265762e636f6d2f67687076632f3f757365726e616d653d6b616b626172267374796c653d666c61742d73717561726526636f6c6f723d626c7565"><img src="https://camo.githubusercontent.com/303a63322c7738ddb3025be1aaf29114573a7aee6e9e719caddaa9f838517d86/68747470733a2f2f6b6f6d617265762e636f6d2f67687076632f3f757365726e616d653d6b616b626172267374796c653d666c61742d73717561726526636f6c6f723d626c7565" alt="" data-canonical-src="https://komarev.com/ghpvc/?username=kakbar&amp;style=flat-square&amp;color=blue" style="max-width: 100%;"></a></p>
-  
 
-🔭 I’m working as a Senior Software Engineer.
+  <h2 align="center">
+I'm working as a Senior Software Engineer 💻
+</h2> 
 
-### ☕ Work :office: 
+### :office: Work  
 
   Senior Software Engineer with over 14 years of experience in software development and architecture.
 High skilled in developing Full Stack systems in Microsoft Technology Stack, Cloud Based Applications,
