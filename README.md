@@ -55,4 +55,5 @@ architecture on amazing products.
 
 <!--* [Twitter](https://twitter.com/willvelida)-->
 * [LinkedIn](https://www.linkedin.com/in/leandro-carlini)
+* [Email](mailto:leandrocarlini@gmail.com)
 <!--* [Medium](https://medium.com/@willvelida)-->
