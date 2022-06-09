@@ -10,9 +10,9 @@
 
 🔭 I’m working as a Senior Software Engineer.
 
-### ☕ Work
+### ☕ Work :office: 
 
-  :office: Senior Software Engineer with over 14 years of experience in software development and architecture.
+  Senior Software Engineer with over 14 years of experience in software development and architecture.
 High skilled in developing Full Stack systems in Microsoft Technology Stack, Cloud Based Applications,
 Solutions Architect, Cloud Engineering and Automation.
 
@@ -49,11 +49,13 @@ architecture on amazing products.
 <a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg"><img src="https://github.com/devicons/devicon/raw/master/icons/git/git-original-wordmark.svg" title="GIT" width="40" height="40" style="max-width: 100%;"></a> 
 </p>
 <hr>
-</div>
+
 
 ### 📫 How to reach me
+  </div>
 
 <!--* [Twitter](https://twitter.com/willvelida)-->
 * [LinkedIn](https://www.linkedin.com/in/leandro-carlini)
 * [Email](mailto:leandrocarlini@gmail.com)
 <!--* [Medium](https://medium.com/@willvelida)-->
+  
