@@ -7,9 +7,24 @@
   
  <p align="center" dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/303a63322c7738ddb3025be1aaf29114573a7aee6e9e719caddaa9f838517d86/68747470733a2f2f6b6f6d617265762e636f6d2f67687076632f3f757365726e616d653d6b616b626172267374796c653d666c61742d73717561726526636f6c6f723d626c7565"><img src="https://camo.githubusercontent.com/303a63322c7738ddb3025be1aaf29114573a7aee6e9e719caddaa9f838517d86/68747470733a2f2f6b6f6d617265762e636f6d2f67687076632f3f757365726e616d653d6b616b626172267374796c653d666c61742d73717561726526636f6c6f723d626c7565" alt="" data-canonical-src="https://komarev.com/ghpvc/?username=kakbar&amp;style=flat-square&amp;color=blue" style="max-width: 100%;"></a></p>
   
-  <ul dir="auto">
-<li><g-emoji class="g-emoji" alias="telescope" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f52d.png">🔭</g-emoji> I’m working as a Senior Software Engineer.</li>
-</ul>
+
+🔭 I’m working as a Senior Software Engineer.
+
+
+
+  :office: Software Engineer with over 14 years of experience in software development and architecture.
+High skilled in developing Full Stack systems in Microsoft Technology Stack, Cloud Based Applications,
+Solutions Architect, Cloud Engineering and Automation.
+
+
+
+Developing solutions for clients in the Latin American, American, Canadian and European
+market using agile techniques and working with a DevOps mindset. I've created scalable customercentric experiences that have a business impact, in a wide range of sectors including retail, payments, health system, airlines, loyalty, e-commerce and financial services.
+
+
+Passionate about learning new technologies, building and developing the best software and
+architecture on amazing products.
+
   
  <hr>
 <h3 dir="auto"><a id="user-content--languages-and-tools-" class="anchor" aria-hidden="true" href="#-languages-and-tools-"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a><g-emoji class="g-emoji" alias="hammer_and_wrench" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6e0.png">🛠</g-emoji>  Languages and Tools :</h3>
