@@ -51,7 +51,7 @@ architecture on amazing products.
       <img src="https://raw.githubusercontent.com/leosourcecode/leosourcecode/04be329aaa08f1b2996c0e321035e8be2953c753/assets/icons/linkedin.svg" width=90" height="42" />
    </a>
    <a href="mailto:leandrocarlini@gmail.com" target="_blank">
-      <img src="https://github.com/leosourcecode/leosourcecode/blob/main/assets/icons/email.png?raw=true" width=90" height="42" />
+      <img src="https://raw.githubusercontent.com/leosourcecode/leosourcecode/e76f94599924e8fe0e30d4673bc4eb6398b83197/assets/icons/email.svg" width=90" height="42" />
    </a>
 </div>
 
