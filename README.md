@@ -46,6 +46,15 @@ architecture on amazing products.
 
 * [LinkedIn](https://www.linkedin.com/in/leandro-carlini)
 * [Email](mailto:leandrocarlini@gmail.com)
+<div align="center">
+   <a href="https://www.linkedin.com/in/leandro-carlini" target="_blank">
+      <img src="https://raw.githubusercontent.com/leosourcecode/leosourcecode/04be329aaa08f1b2996c0e321035e8be2953c753/assets/icons/linkedin.svg" width=75" height="35" />
+   </a>
+</div>
+
+<a href="http://www.google.com" target="_blank">
+  <img width="220" height="250" border="0" align="center"  src=""/>
+</a>
 
 ##
 
@@ -61,4 +70,7 @@ architecture on amazing products.
 </div>
 
 ###
-<img href="https://github.com/leosourcecode/leosourcecode/blob/output/snake.svg" alt="Snake animation" />
+
+<div align="center">
+   <img src="https://raw.githubusercontent.com/leosourcecode/leosourcecode/1f6b42ae0a9224fb5a47de65342f910cc8267a9e/assets/snake/snake.svg" alt="Snake animation" />
+</div>
