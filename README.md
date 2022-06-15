@@ -47,10 +47,14 @@ architecture on amazing products.
 * [LinkedIn](https://www.linkedin.com/in/leandro-carlini)
 * [Email](mailto:leandrocarlini@gmail.com)
 <div align="center">
-   <a href="https://www.linkedin.com/in/leandro-carlini/" target="_blank">
-      <img alt="Qries" src="https://raw.githubusercontent.com/leosourcecode/leosourcecode/04be329aaa08f1b2996c0e321035e8be2953c753/assets/icons/linkedin.svg" width=75" height="35" target="_blank">
+   <a href="https://www.linkedin.com/in/leandro-carlini" target="_blank">
+      <img src="https://raw.githubusercontent.com/leosourcecode/leosourcecode/04be329aaa08f1b2996c0e321035e8be2953c753/assets/icons/linkedin.svg" width=75" height="35" />
    </a>
 </div>
+
+<a href="http://www.google.com" target="_blank">
+  <img width="220" height="250" border="0" align="center"  src=""/>
+</a>
 
 ##
 
