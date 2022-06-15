@@ -48,7 +48,7 @@ architecture on amazing products.
 * [Email](mailto:leandrocarlini@gmail.com)
 <div align="center">
    <a href="https://www.linkedin.com/in/leandro-carlini/" target="_blank">
-      <img alt="Qries" src="https://raw.githubusercontent.com/leosourcecode/leosourcecode/04be329aaa08f1b2996c0e321035e8be2953c753/assets/icons/linkedin.svg" width=75" height="35">
+      <img alt="Qries" src="https://raw.githubusercontent.com/leosourcecode/leosourcecode/04be329aaa08f1b2996c0e321035e8be2953c753/assets/icons/linkedin.svg" width=75" height="35" target="_blank">
    </a>
 </div>
 
