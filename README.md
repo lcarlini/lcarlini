@@ -61,4 +61,7 @@ architecture on amazing products.
 </div>
 
 ###
-<img href="https://github.com/leosourcecode/leosourcecode/blob/output/snake.svg" alt="Snake animation" />
+
+<div align="center">
+   <img src="https://raw.githubusercontent.com/leosourcecode/leosourcecode/1f6b42ae0a9224fb5a47de65342f910cc8267a9e/assets/snake/snake.svg" alt="Snake animation" />
+</div>
