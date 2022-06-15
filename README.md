@@ -74,3 +74,30 @@ architecture on amazing products.
 <div align="center">
    <img src="https://raw.githubusercontent.com/leosourcecode/leosourcecode/1f6b42ae0a9224fb5a47de65342f910cc8267a9e/assets/snake/snake.svg" alt="Snake animation" />
 </div>
+
+<!--
+Languages and Tools:
+● .Net Core, .Net Framework, ASP .Net MVC, Web Forms, Windows Services, NuGet Packages among others.
+● C#, AutoMapper, SignalIR, Hangfire, PowerShell, Python, NPM, JavaScript, TypeScript, JQuery, ES6 and Webpack.
+● REST API, GraphQL, gRPC, WCF, SOA, JSon and OAuth.
+● MSSQL Server, CosmosDB, DynamoDB, MySQL, MariaDB, MongoDB and Redis
+● ADO .Net, Entity Framework Core and Dapper.
+● NodeJS, Express, Mongoose, Sequelize, Request, AWS SDK among others.
+● Angular, CSS, HTML, Syncfusion, Razor and Bootstrap.
+● Azure DevOps, DevSecOps, CI/CD, ALM, TFS, VSTS, GitLab, Docker, Docker Compose, Chef Infra and Chocolatey.
+● GIT and TFVC.
+● Azure (Azure Functions, Pipelines, ARM Templates, Resources Groups, Azure Storage, Monitor, Key Vault, Alerts, ServiceBus, LogicApps, API Management, Web Apps, Application Insights, Log Analytics, SQL Database, SQL Elastic Pool, AD, VM among others), Azure SDK and PowerApps.
+● AWS (Amplify, AppSync, Cognito, Elastic Beanstalk, CodeCommit, EC2, S3, IAM, Cloud Formation, Lambda, CloudWatch, RDS, SNS, SQS, KMS, VPC and Systems Manager) and AWS SDK.
+● IaaS, PaaS, FaaS and SaaS.
+● IoC/DI, Microservices, Serverless, Clean Code, Best Practices, OOP, SOLID, Design Patterns and Data Modeling.
+● MSTest, XUnit, NUnit, Moq, Rhino Mocks, SpecFlow, Selenium, MochaJS, SinonJS, ChaiJS, DDD, TDD and BDD.
+● ReSharper, Postman, Swagger, Service Insight, Polly, FluentValidation, Password Manager, SumoLogic, GrayLog, NLog, Serilog, Stripe, ServiceNow, SoapUI and Fiddler.
+● Agile Scrum, Azure Boards, Kanban, Jira, SAFe, Confluence and Slack.
+
+👇🏼 Check out my Github page.
+https://github.com/leosourcecode
+
+📫 Contact me: leandrocarlini@gmail.com
+
+Software Engineer | Full Stack Developer | C# Developer | .Net Developer | Azure Developer | AWS Developer | Software Developer | Back-End Developer | Solutions Architect | Software Architect | Specialist Software | Technical Leader | Software Consultant
+-->
