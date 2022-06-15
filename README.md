@@ -48,10 +48,10 @@ architecture on amazing products.
 * [Email](mailto:leandrocarlini@gmail.com)
 <div align="center">
    <a href="https://www.linkedin.com/in/leandro-carlini" target="_blank">
-      <img src="https://raw.githubusercontent.com/leosourcecode/leosourcecode/04be329aaa08f1b2996c0e321035e8be2953c753/assets/icons/linkedin.svg" width=75" height="35" />
+      <img src="https://raw.githubusercontent.com/leosourcecode/leosourcecode/04be329aaa08f1b2996c0e321035e8be2953c753/assets/icons/linkedin.svg" width=90" height="42" />
    </a>
    <a href="mailto:leandrocarlini@gmail.com" target="_blank">
-      <img src="https://github.com/leosourcecode/leosourcecode/blob/main/assets/icons/email.png?raw=true" width=75" height="35" />
+      <img src="https://github.com/leosourcecode/leosourcecode/blob/main/assets/icons/email.png?raw=true" width=90" height="42" />
    </a>
 </div>
 
