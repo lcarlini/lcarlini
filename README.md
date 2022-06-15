@@ -4,7 +4,7 @@
 I'm a Software Engineer 💻
 </h3> 
 
-## :office: Work  
+## 💼 Work  
 
   Senior Software Engineer with over 14 years of experience in software development and architecture.
 High skilled in developing Full Stack systems in Microsoft Technology Stack, Cloud Based Applications,
