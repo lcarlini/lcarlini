@@ -6,15 +6,11 @@ I'm a Software Engineer 💻
 
 ## 💼 Work  
 
-  Senior Software Engineer with over 14 years of experience in software development and architecture.
-High skilled in developing Full Stack systems in Microsoft Technology Stack, Cloud Based Applications,
-Solutions Architect, Cloud Engineering and Automation.
+  Senior Software Engineer with over 14 years of experience in software development and architecture. High skilled in developing Full Stack systems in Microsoft Technology Stack, Cloud Based Applications, Solutions Architect, Cloud Engineering and Automation.
 
-Developing solutions for clients in the Latin American, United States, Canadian and European
-market using agile techniques and working with a DevOps mindset. I've created scalable customercentric experiences that have a business impact, in a wide range of sectors including retail, payments, health system, airlines, loyalty, e-commerce and financial services.
+Developing solutions for clients in the Latin American, United States, Canadian and European market using agile techniques and working with a DevOps mindset. I've created scalable customercentric experiences that have a business impact, in a wide range of sectors including retail, payments, health system, airlines, loyalty, e-commerce and financial services.
 
-Passionate about learning new technologies, building and developing the best software and
-architecture on amazing products.
+Passionate about learning new technologies, building and developing the best software and architecture on amazing products.
 
 ## 🛠 Languages and Tools
  
