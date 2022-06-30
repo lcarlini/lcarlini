@@ -83,7 +83,7 @@ Languages and Tools:
 ● MSSQL Server, CosmosDB, DynamoDB, MySQL, MariaDB, MongoDB and Redis
 ● ADO .Net, Entity Framework Core and Dapper.
 ● NodeJS, Express, Mongoose, Sequelize, Request, AWS SDK among others.
-● Angular, CSS, HTML, Syncfusion, Razor and Bootstrap.
+● Angular, CSS, HTML, Syncfusion, Razor, React Native and Bootstrap.
 ● Azure DevOps, DevSecOps, CI/CD, ALM, TFS, VSTS, GitLab, Docker, Docker Compose, Chef Infra and Chocolatey.
 ● GIT and TFVC.
 ● Azure (Azure Functions, Pipelines, ARM Templates, Resources Groups, Azure Storage, Monitor, Key Vault, Alerts, ServiceBus, LogicApps, API Management, Web Apps, Application Insights, Log Analytics, SQL Database, SQL Elastic Pool, AD, VM among others), Azure SDK and PowerApps.
