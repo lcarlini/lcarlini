@@ -43,14 +43,14 @@ Passionate about learning new technologies, building and developing the best sof
 <!--* [LinkedIn](https://www.linkedin.com/in/leandro-carlini)
 * [Email](mailto:leandrocarlini@gmail.com)-->
 <div align="center">
-   <a href="https://www.linkedin.com/in/leandro-carlini" target="_blank">
-      <img src="https://raw.githubusercontent.com/leosourcecode/leosourcecode/04be329aaa08f1b2996c0e321035e8be2953c753/assets/icons/linkedin.svg" width=35" height="33" />
-   </a>
+<div>
+  <a target="_blank" href = "mailto:leandrocarlini@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+  <a target="_blank" href="https://www.linkedin.com/in/leandro-carlini" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a> 
 
-   <a href="mailto:leandrocarlini@gmail.com" target="_blank">
-      <img src="https://raw.githubusercontent.com/leosourcecode/leosourcecode/fcb0096f00083ef72edef094f4933695ffa611ef/assets/icons/email2.svg" width=35" height="33" />
-   </a>
 </div>
+</div>
+
+
 
 ##
 
