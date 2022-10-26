@@ -10,6 +10,8 @@ I'm a Software Engineer 💻
 
 Developing solutions for clients in the Latin American, United States, Canada and Europe markets using agile techniques and working with a DevOps mindset. I've created scalable customercentric experiences that have a business impact, in a wide range of sectors including retail, payments, health system, airlines, loyalty, e-commerce and financial services.
 
+Solid experience in software development, software architecture, team leadership and technical leader.
+
 Passionate about learning new technologies, building and developing the best software and architecture on amazing products.
 
 ## 🛠 Languages and Tools
