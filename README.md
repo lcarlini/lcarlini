@@ -58,19 +58,19 @@ Passionate about learning new technologies, building and developing the best sof
 
 ###
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dark&hide_border=false&username=leosourcecode" height="150" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dark&hide_border=false&username=leosourcecode" height="150" alt="languages graph"  />
+  <img src="https://github-readme-stats.vercel.app/api?hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dark&hide_border=false&username=lcarlini" height="150" alt="stats graph"  />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dark&hide_border=false&username=lcarlini" height="150" alt="languages graph"  />
 </div>
 
 ###
 <div align="center">
-  <img src="https://profile-counter.glitch.me/leosourcecode/count.svg?"  />
+  <img src="https://profile-counter.glitch.me/lcarlini/count.svg?"  />
 </div>
 
 ###
 
 <div align="center">
-   <img src="https://raw.githubusercontent.com/leosourcecode/leosourcecode/1f6b42ae0a9224fb5a47de65342f910cc8267a9e/assets/snake/snake.svg" alt="Snake animation" />
+   <img src="https://raw.githubusercontent.com/lcarlini/lcarlini/1f6b42ae0a9224fb5a47de65342f910cc8267a9e/assets/snake/snake.svg" alt="Snake animation" />
 </div>
 
 <!--
@@ -93,7 +93,7 @@ Languages and Tools:
 ● Agile Scrum, Azure Boards, Kanban, Jira, SAFe, Confluence and Slack.
 
 👇🏼 Check out my Github page.
-https://github.com/leosourcecode
+https://github.com/lcarlini
 
 📫 Contact me: leandrocarlini@gmail.com
 
