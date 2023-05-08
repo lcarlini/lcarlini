@@ -56,6 +56,12 @@ Passionate about learning new technologies, building and developing the best sof
 
 ##
 
+<div align="center">
+  <a href="https://github.com/lcarlini">
+  <img height="180em" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=lcarlini&show_icons=true&theme=synthwave&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=lcarlini&layout=compact&langs_count=7&theme=synthwave"/>
+</div>
+
 
 ###
 <div align="center">
