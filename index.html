@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leandro Carlini Mingorance — Senior Software Engineer</title>
+  <meta name="description" content="Senior Software Engineer & Solutions Architect with 15+ years designing scalable, cloud-native, event-driven systems on .NET, Azure and AWS." />
+  <meta name="author" content="Leandro Carlini Mingorance" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Leandro Carlini Mingorance — Senior Software Engineer" />
+  <meta property="og:description" content="Designing scalable, cloud-native systems that turn complex problems into reliable, business-driving software." />
+  <meta property="og:url" content="https://lcarlini.github.io/lcarlini/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%236C63FF'/><text x='50' y='68' font-size='54' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'>L</text></svg>" />
+
+  <style>
+    :root {
+      --bg: #0a0b12;
+      --bg-2: #10121d;
+      --surface: rgba(255, 255, 255, 0.04);
+      --surface-border: rgba(255, 255, 255, 0.08);
+      --text: #e9ebf4;
+      --muted: #9aa0b5;
+      --accent: #6c63ff;
+      --accent-2: #22d3ee;
+      --accent-3: #f472b6;
+      --radius: 18px;
+      --max: 1120px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Ambient background glow */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(600px circle at 15% 10%, rgba(108, 99, 255, 0.18), transparent 45%),
+        radial-gradient(700px circle at 85% 20%, rgba(34, 211, 238, 0.12), transparent 45%),
+        radial-gradient(600px circle at 50% 100%, rgba(244, 114, 182, 0.10), transparent 45%);
+      z-index: -2;
+      pointer-events: none;
+    }
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+      background-size: 46px 46px;
+      -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 20%, transparent 75%);
+              mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 20%, transparent 75%);
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    h1, h2, h3 { font-family: 'Sora', sans-serif; line-height: 1.15; letter-spacing: -0.02em; }
+    a { color: inherit; text-decoration: none; }
+    .container { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+
+    .gradient-text {
+      background: linear-gradient(120deg, var(--accent) 0%, var(--accent-2) 50%, var(--accent-3) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Nav */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0;
+      z-index: 100;
+      backdrop-filter: blur(14px);
+      background: rgba(10, 11, 18, 0.55);
+      border-bottom: 1px solid transparent;
+      transition: border-color .3s ease, background .3s ease;
+    }
+    nav.scrolled { border-bottom: 1px solid var(--surface-border); background: rgba(10, 11, 18, 0.8); }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+    .logo { font-family: 'Sora'; font-weight: 800; font-size: 1.15rem; display: flex; align-items: center; gap: 10px; }
+    .logo .mark {
+      width: 32px; height: 32px; border-radius: 9px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      display: grid; place-items: center; color: #fff; font-size: .95rem;
+      box-shadow: 0 6px 20px rgba(108,99,255,.4);
+    }
+    .nav-links { display: flex; gap: 30px; align-items: center; }
+    .nav-links a { color: var(--muted); font-size: .92rem; font-weight: 500; transition: color .2s; }
+    .nav-links a:hover { color: var(--text); }
+    .nav-cta {
+      padding: 9px 18px; border-radius: 999px;
+      background: var(--surface); border: 1px solid var(--surface-border);
+      color: var(--text) !important; font-weight: 600;
+    }
+    .nav-cta:hover { border-color: var(--accent); }
+    .nav-toggle { display: none; background: none; border: none; color: var(--text); font-size: 1.5rem; cursor: pointer; }
+
+    /* Hero */
+    header.hero { min-height: 100vh; display: flex; align-items: center; padding: 120px 0 80px; }
+    .badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 7px 16px; border-radius: 999px;
+      background: var(--surface); border: 1px solid var(--surface-border);
+      font-size: .82rem; color: var(--muted); margin-bottom: 28px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .badge .dot { width: 8px; height: 8px; border-radius: 50%; background: #34d399; box-shadow: 0 0 0 4px rgba(52,211,153,.18); animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:.4;} }
+
+    .hero h1 { font-size: clamp(2.6rem, 6.5vw, 4.6rem); font-weight: 800; margin-bottom: 22px; }
+    .hero .role { font-family: 'JetBrains Mono', monospace; color: var(--accent-2); font-size: clamp(1rem, 2.4vw, 1.35rem); margin-bottom: 24px; font-weight: 500; }
+    .hero p.lead { font-size: clamp(1.02rem, 2vw, 1.22rem); color: var(--muted); max-width: 640px; margin-bottom: 38px; }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+
+    .btn {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 14px 26px; border-radius: 12px; font-weight: 600; font-size: .98rem;
+      transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+      border: 1px solid transparent; cursor: pointer;
+    }
+    .btn svg { width: 18px; height: 18px; }
+    .btn-primary { background: linear-gradient(135deg, var(--accent), #8b5cf6); color: #fff; box-shadow: 0 10px 30px rgba(108,99,255,.35); }
+    .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(108,99,255,.5); }
+    .btn-ghost { background: var(--surface); border-color: var(--surface-border); color: var(--text); }
+    .btn-ghost:hover { border-color: var(--accent); transform: translateY(-3px); }
+
+    /* Section shell */
+    section { padding: 90px 0; }
+    .section-head { max-width: 620px; margin-bottom: 54px; }
+    .section-tag { font-family: 'JetBrains Mono', monospace; color: var(--accent); font-size: .82rem; letter-spacing: .18em; text-transform: uppercase; margin-bottom: 14px; display: block; }
+    .section-head h2 { font-size: clamp(1.9rem, 4vw, 2.7rem); font-weight: 700; margin-bottom: 16px; }
+    .section-head p { color: var(--muted); font-size: 1.05rem; }
+
+    /* Stats */
+    .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+    .stat {
+      background: var(--surface); border: 1px solid var(--surface-border);
+      border-radius: var(--radius); padding: 28px 24px; text-align: left;
+      position: relative; overflow: hidden; transition: transform .3s, border-color .3s;
+    }
+    .stat:hover { transform: translateY(-5px); border-color: rgba(108,99,255,.5); }
+    .stat .num { font-family: 'Sora'; font-weight: 800; font-size: clamp(1.9rem, 3.5vw, 2.6rem); }
+    .stat .label { color: var(--muted); font-size: .92rem; margin-top: 4px; }
+
+    /* Expertise cards */
+    .cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+      border: 1px solid var(--surface-border); border-radius: var(--radius);
+      padding: 30px; transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+      position: relative;
+    }
+    .card:hover { transform: translateY(-6px); border-color: rgba(108,99,255,.5); box-shadow: 0 20px 50px rgba(0,0,0,.35); }
+    .card .icon {
+      width: 52px; height: 52px; border-radius: 14px; display: grid; place-items: center;
+      background: rgba(108,99,255,.14); margin-bottom: 20px; font-size: 1.5rem;
+    }
+    .card h3 { font-size: 1.25rem; margin-bottom: 10px; }
+    .card p { color: var(--muted); font-size: .97rem; }
+
+    /* Stack */
+    .stack-groups { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+    .stack-group { background: var(--surface); border: 1px solid var(--surface-border); border-radius: var(--radius); padding: 26px 28px; }
+    .stack-group h4 { font-family: 'JetBrains Mono', monospace; color: var(--accent-2); font-size: .82rem; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 18px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 10px; }
+    .chip {
+      padding: 7px 14px; border-radius: 999px; font-size: .86rem; font-weight: 500;
+      background: rgba(255,255,255,.05); border: 1px solid var(--surface-border); color: var(--text);
+      transition: background .2s, border-color .2s, transform .2s;
+    }
+    .chip:hover { background: rgba(108,99,255,.16); border-color: var(--accent); transform: translateY(-2px); }
+
+    /* Principles */
+    .principles { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .principle { display: flex; gap: 16px; padding: 22px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--surface-border); }
+    .principle .n { font-family: 'JetBrains Mono'; color: var(--accent); font-weight: 500; font-size: .95rem; padding-top: 2px; }
+    .principle h4 { font-size: 1.05rem; margin-bottom: 5px; }
+    .principle p { color: var(--muted); font-size: .93rem; }
+
+    /* Contact */
+    .contact-card {
+      text-align: center;
+      background: linear-gradient(135deg, rgba(108,99,255,.12), rgba(34,211,238,.08));
+      border: 1px solid var(--surface-border); border-radius: 28px; padding: 64px 32px;
+      position: relative; overflow: hidden;
+    }
+    .contact-card h2 { font-size: clamp(1.9rem, 4.5vw, 3rem); margin-bottom: 16px; }
+    .contact-card p { color: var(--muted); max-width: 520px; margin: 0 auto 34px; font-size: 1.05rem; }
+    .contact-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+    /* Footer */
+    footer { padding: 40px 0 60px; border-top: 1px solid var(--surface-border); margin-top: 40px; }
+    .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; color: var(--muted); font-size: .9rem; }
+    .footer-links { display: flex; gap: 20px; }
+    .footer-links a:hover { color: var(--text); }
+
+    /* Reveal animation */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    @media (max-width: 900px) {
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .cards-grid { grid-template-columns: 1fr; }
+      .stack-groups, .principles { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 680px) {
+      .nav-links { display: none; }
+      .nav-toggle { display: block; }
+      .nav-links.open {
+        display: flex; position: absolute; top: 68px; left: 0; right: 0;
+        flex-direction: column; gap: 0; background: var(--bg-2);
+        border-bottom: 1px solid var(--surface-border); padding: 8px 24px 20px;
+      }
+      .nav-links.open a { padding: 12px 0; width: 100%; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; transition: none !important; scroll-behavior: auto; }
+      .reveal { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav id="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo"><span class="mark">L</span> Leandro Carlini</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#expertise">Expertise</a>
+        <a href="#impact">Impact</a>
+        <a href="#stack">Stack</a>
+        <a href="#principles">Principles</a>
+        <a href="https://github.com/lcarlini" class="nav-cta" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="container">
+      <span class="badge"><span class="dot"></span> Available for high-impact engineering work</span>
+      <h1>Building software that <span class="gradient-text">scales, endures,<br>and delivers</span>.</h1>
+      <div class="role">Senior Software Engineer · Solutions Architect · Tech Lead</div>
+      <p class="lead">
+        15+ years designing distributed, cloud-native systems on .NET, Azure, and AWS —
+        turning complex, ambiguous problems into reliable platforms that move the business forward.
+      </p>
+      <div class="hero-actions">
+        <a href="https://github.com/lcarlini" class="btn btn-primary" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.79 2.73 1.27 3.4.97.1-.76.4-1.27.73-1.56-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+          View GitHub
+        </a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="expertise">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">What I do</span>
+        <h2>Engineering that goes deep where it matters</h2>
+        <p>I focus on the hard, high-leverage parts of software: architecture, scalability, reliability, and the systems thinking that keeps them healthy over time.</p>
+      </div>
+      <div class="cards-grid">
+        <div class="card reveal">
+          <div class="icon">☁️</div>
+          <h3>Cloud & Distributed Architecture</h3>
+          <p>Event-driven, microservice, and serverless systems on Azure and AWS — designed for scale, resilience, and clean domain boundaries.</p>
+        </div>
+        <div class="card reveal">
+          <div class="icon">⚙️</div>
+          <h3>Backend & Platform Engineering</h3>
+          <p>High-performance APIs and services in .NET / C#, with clean architecture, DDD, and CQRS underpinning maintainable, testable codebases.</p>
+        </div>
+        <div class="card reveal">
+          <div class="icon">🗄️</div>
+          <h3>Data-Intensive Systems</h3>
+          <p>Pipelines processing millions of records — ingestion, sanitization, and real-time filtering tuned for consistency and performance.</p>
+        </div>
+        <div class="card reveal">
+          <div class="icon">🔁</div>
+          <h3>Legacy Modernization</h3>
+          <p>Migrating monoliths to cloud-native platforms without breaking the business — improving scalability, cost, and developer velocity.</p>
+        </div>
+        <div class="card reveal">
+          <div class="icon">🤖</div>
+          <h3>AI-Assisted Delivery</h3>
+          <p>Applying AI within products and across engineering workflows to automate work, accelerate delivery, and raise developer productivity.</p>
+        </div>
+        <div class="card reveal">
+          <div class="icon">🧭</div>
+          <h3>Technical Leadership</h3>
+          <p>Leading global teams through architecture reviews, mentoring, and standards — aligning engineering decisions with business outcomes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="impact">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Measurable results</span>
+        <h2>Impact, not just output</h2>
+        <p>Engineering earns its value in outcomes. A few numbers from work delivered across four regions.</p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat reveal"><div class="num gradient-text">15+</div><div class="label">Years shipping production software</div></div>
+        <div class="stat reveal"><div class="num gradient-text">$8M+</div><div class="label">Revenue driven via payment solutions</div></div>
+        <div class="stat reveal"><div class="num gradient-text">99.9%</div><div class="label">Uptime on production systems</div></div>
+        <div class="stat reveal"><div class="num gradient-text">70%</div><div class="label">Faster provisioning with IaC + CI/CD</div></div>
+        <div class="stat reveal"><div class="num gradient-text">4</div><div class="label">Regions: US · Canada · Europe · LATAM</div></div>
+        <div class="stat reveal"><div class="num gradient-text">Millions</div><div class="label">Records in real-time data pipelines</div></div>
+        <div class="stat reveal"><div class="num gradient-text">60%</div><div class="label">Less manual effort via AI automation</div></div>
+        <div class="stat reveal"><div class="num gradient-text">∞</div><div class="label">Curiosity for the next hard problem</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="stack">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Toolbox</span>
+        <h2>The stack I build with</h2>
+        <p>Deep in the Microsoft ecosystem and cloud-native tooling, with the breadth to pick the right tool for the job.</p>
+      </div>
+      <div class="stack-groups">
+        <div class="stack-group reveal">
+          <h4>Languages & Frameworks</h4>
+          <div class="chips">
+            <span class="chip">C#</span><span class="chip">.NET / .NET Core</span><span class="chip">ASP.NET Core</span>
+            <span class="chip">Web APIs</span><span class="chip">Entity Framework Core</span><span class="chip">TypeScript</span>
+            <span class="chip">Node.js</span><span class="chip">Angular</span><span class="chip">React</span>
+          </div>
+        </div>
+        <div class="stack-group reveal">
+          <h4>Cloud & DevOps</h4>
+          <div class="chips">
+            <span class="chip">Azure</span><span class="chip">AWS</span><span class="chip">Serverless</span>
+            <span class="chip">Azure Functions</span><span class="chip">Docker</span><span class="chip">Terraform</span>
+            <span class="chip">CI/CD</span><span class="chip">Azure DevOps</span><span class="chip">API Management</span>
+          </div>
+        </div>
+        <div class="stack-group reveal">
+          <h4>Data & Architecture</h4>
+          <div class="chips">
+            <span class="chip">SQL Server</span><span class="chip">Cosmos DB</span><span class="chip">MongoDB</span>
+            <span class="chip">Redis</span><span class="chip">Microservices</span><span class="chip">Event-Driven</span>
+            <span class="chip">Distributed Systems</span><span class="chip">NServiceBus</span>
+          </div>
+        </div>
+        <div class="stack-group reveal">
+          <h4>Practices & Craft</h4>
+          <div class="chips">
+            <span class="chip">Clean Architecture</span><span class="chip">DDD</span><span class="chip">SOLID</span>
+            <span class="chip">CQRS</span><span class="chip">TDD</span><span class="chip">Observability</span>
+            <span class="chip">Agile / Scrum</span><span class="chip">AI-Assisted Dev</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="principles">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">How I work</span>
+        <h2>Engineering principles I stand by</h2>
+        <p>The mindset behind the code — what keeps systems trustworthy and teams moving fast.</p>
+      </div>
+      <div class="principles">
+        <div class="principle reveal"><div class="n">01</div><div><h4>Simplicity is a feature</h4><p>The best architecture is the simplest one that solves the problem well. Complexity is a cost you pay forever.</p></div></div>
+        <div class="principle reveal"><div class="n">02</div><div><h4>Design for change</h4><p>Requirements evolve. Clear boundaries, clean domains, and loose coupling keep systems adaptable, not brittle.</p></div></div>
+        <div class="principle reveal"><div class="n">03</div><div><h4>Reliability is non-negotiable</h4><p>Testing, monitoring, and observability aren't extras — they're how software earns trust in production.</p></div></div>
+        <div class="principle reveal"><div class="n">04</div><div><h4>Business value leads</h4><p>Every technical decision serves an outcome. I translate business goals into systems that actually deliver them.</p></div></div>
+        <div class="principle reveal"><div class="n">05</div><div><h4>Lift the whole team</h4><p>Mentoring, reviews, and shared standards make everyone better — and durable results come from strong teams.</p></div></div>
+        <div class="principle reveal"><div class="n">06</div><div><h4>Never stop learning</h4><p>From cloud-native to AI-assisted engineering, staying curious is how I keep delivering at the edge.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="contact-card reveal">
+        <h2>Let's build something worth talking about</h2>
+        <p>Open to senior engineering, architecture, and technical leadership opportunities. Reach out — happy to share a résumé or dive into the details.</p>
+        <div class="contact-actions">
+          <a href="mailto:leandrocarlini@gmail.com" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            Email me
+          </a>
+          <a href="https://www.linkedin.com/in/leandro-carlini/" class="btn btn-ghost" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/lcarlini" class="btn btn-ghost" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.79 2.73 1.27 3.4.97.1-.76.4-1.27.73-1.56-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Leandro Carlini Mingorance · Crafted with care.</span>
+      <div class="footer-links">
+        <a href="https://github.com/lcarlini" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/leandro-carlini/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:leandrocarlini@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 20));
+
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach((el, i) => {
+      el.style.transitionDelay = (i % 4) * 70 + 'ms';
+      io.observe(el);
+    });
+  </script>
+</body>
+</html>

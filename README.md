@@ -1,102 +1,110 @@
-## Hi there 👋 I'm Leandro
-   
-<h3>
-I'm a Software Engineer 💻
-</h3> 
+<h1 align="center">Leandro Carlini Mingorance</h1>
 
-## 💼 Work  
-
-  Senior Software Engineer with over 15 years of experience in software development and architecture. High skilled in developing Full Stack systems in Microsoft Technology Stack, Cloud Based Applications, Solutions Architect, Cloud Engineering and Automation.
-
-Developing solutions for clients in the Latin American, United States, Canada and Europe markets using agile techniques and working with a DevOps mindset. I've created scalable customercentric experiences that have a business impact, in a wide range of sectors including retail, payments, health system, airlines, loyalty, e-commerce and financial services.
-
-Solid experience in software development, software architecture, team leadership and technical leader.
-
-Passionate about learning new technologies, building and developing the best software and architecture on amazing products.
-
-## 🛠 Languages and Tools
- 
-<div id="header" align="center">
-<p dir="auto">
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/azure/azure-original-wordmark.svg"><img src="https://github.com/devicons/devicon/raw/master/icons/azure/azure-original-wordmark.svg" title="Azure" alt="azure" width="40" height="40" style="max-width: 100%;"></a> 
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/dot-net/dot-net-original-wordmark.svg"><img src="https://github.com/devicons/devicon/raw/master/icons/dot-net/dot-net-original-wordmark.svg" title=".Net" alt="dot" width="40" height="40" style="max-width: 100%;"></a> 
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/angularjs/angularjs-original-wordmark.svg"><img src="https://github.com/devicons/devicon/raw/master/icons/angularjs/angularjs-original-wordmark.svg" title="Angular" alt="angularjs" width="40" height="40" style="max-width: 100%;"></a> 
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/bootstrap/bootstrap-original-wordmark.svg"><img src="https://github.com/devicons/devicon/raw/master/icons/bootstrap/bootstrap-original-wordmark.svg" title="Bootstrap" alt="bootstrap" width="40" height="40" style="max-width: 100%;"></a> 
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/docker/docker-original-wordmark.svg"><img src="https://github.com/devicons/devicon/raw/master/icons/docker/docker-original-wordmark.svg" title="Docker" alt="docker" width="40" height="40" style="max-width: 100%;"></a> 
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/dotnetcore/dotnetcore-original.svg"><img src="https://github.com/devicons/devicon/raw/master/icons/dotnetcore/dotnetcore-original.svg" title=".Net Core" alt="dotnetcore" width="40" height="40" style="max-width: 100%;"></a> 
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg"><img src="https://github.com/devicons/devicon/raw/master/icons/react/react-original-wordmark.svg" title="React" alt="react" width="40" height="40" style="max-width: 100%;"></a> 
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/mongodb/mongodb-original-wordmark.svg"><img src="https://github.com/devicons/devicon/raw/master/icons/mongodb/mongodb-original-wordmark.svg" title="MongoDB" alt="mongodb" width="40" height="40" style="max-width: 100%;"></a> 
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg"><img src="https://github.com/devicons/devicon/raw/master/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg" title="SQL Server" alt="microsoftsqlserver" width="40" height="40" style="max-width: 100%;"></a> 
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/python/python-original-wordmark.svg"><img src="https://github.com/devicons/devicon/raw/master/icons/python/python-original-wordmark.svg" title="Python" alt="python" width="40" height="40" style="max-width: 100%;"></a> 
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"><img src="https://github.com/devicons/devicon/raw/master/icons/css3/css3-plain-wordmark.svg" title="CSS" alt="CSS" width="40" height="40" style="max-width: 100%;"></a> 
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg"><img src="https://github.com/devicons/devicon/raw/master/icons/html5/html5-original.svg" title="HTML" alt="HTML" width="40" height="40" style="max-width: 100%;"></a> 
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg"><img src="https://github.com/devicons/devicon/raw/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40" style="max-width: 100%;"></a> 
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original-wordmark.svg"><img src="https://github.com/devicons/devicon/raw/master/icons/nodejs/nodejs-original-wordmark.svg" title="NodeJS" alt="NodeJS" width="40" height="40" style="max-width: 100%;"></a> 
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"><img src="https://github.com/devicons/devicon/raw/master/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" title="AWS" alt="AWS" width="40" height="40" style="max-width: 100%;"></a> 
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-original.svg"><img src="https://github.com/devicons/devicon/raw/master/icons/typescript/typescript-original.svg" title="TypeScript" alt="typescript" width="40" height="40" style="max-width: 100%;"></a> 
-<a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667"><img src="https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667" title="Postman" alt="Postman" width="40" height="40" data-canonical-src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" style="max-width: 100%;"></a> 
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg"><img src="https://github.com/devicons/devicon/raw/master/icons/git/git-original-wordmark.svg" title="GIT" width="40" height="40" style="max-width: 100%;"></a> 
+<p align="center">
+  <strong>Senior Software Engineer · Solutions Architect · Tech Lead</strong>
 </p>
 
-</div>
+<p align="center">
+  Designing scalable, cloud-native systems that turn complex problems into reliable, business-driving software.
+</p>
 
-## 📫 How to reach me
+<p align="center">
+  <a href="https://lcarlini.github.io/lcarlini/"><img src="https://img.shields.io/badge/Portfolio-lcarlini.github.io-6C63FF?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"></a>
+  <a href="https://www.linkedin.com/in/leandro-carlini/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="mailto:leandrocarlini@gmail.com"><img src="https://img.shields.io/badge/Email-Get%20in%20touch-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+</p>
 
-<!--* [LinkedIn](https://www.linkedin.com/in/leandro-carlini)
-* [Email](mailto:leandrocarlini@gmail.com)-->
+---
+
+### About
+
+I'm a software engineer with **15+ years** of experience architecting and delivering
+enterprise-grade systems for teams across the **US, Canada, Europe, and LATAM**.
+
+I specialize in **backend and cloud architecture** — building distributed, event-driven,
+and microservice-based platforms on **.NET / .NET Core**, **Azure**, and **AWS**. My focus
+is engineering excellence that ships: maintainable code, resilient systems, and measurable
+business impact.
+
+- Architecting **scalable, cloud-native** and **event-driven** systems
+- Modernizing legacy platforms and leading **multi-cloud migrations**
+- Designing **high-throughput data pipelines** and distributed systems
+- Applying **AI-assisted workflows** to accelerate delivery and developer productivity
+- Leading global teams as **Tech Lead** — mentoring, reviews, and architecture standards
+
+---
+
+### Impact at a glance
+
+| | |
+|---|---|
+| **15+ yrs** delivering production software | **4 regions** — US · Canada · Europe · LATAM |
+| **$8M+** driven through payment solutions | **99.9%** uptime on production systems |
+| **70%** faster cloud provisioning (IaC + CI/CD) | **Millions** of records in real-time pipelines |
+
+---
+
+### Tech Stack
+
+**Languages & Frameworks**
+<p>
+  <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white" alt="C#">
+  <img src="https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white" alt=".NET">
+  <img src="https://img.shields.io/badge/ASP.NET_Core-512BD4?style=flat-square&logo=dotnet&logoColor=white" alt="ASP.NET Core">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js">
+  <img src="https://img.shields.io/badge/Angular-DD0031?style=flat-square&logo=angular&logoColor=white" alt="Angular">
+  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React">
+</p>
+
+**Cloud & DevOps**
+<p>
+  <img src="https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" alt="Azure">
+  <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker">
+  <img src="https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white" alt="Terraform">
+  <img src="https://img.shields.io/badge/CI%2FCD-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="CI/CD">
+  <img src="https://img.shields.io/badge/Serverless-FD5750?style=flat-square&logo=serverless&logoColor=white" alt="Serverless">
+</p>
+
+**Data & Architecture**
+<p>
+  <img src="https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white" alt="SQL Server">
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB">
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis">
+  <img src="https://img.shields.io/badge/Cosmos_DB-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" alt="Cosmos DB">
+  <img src="https://img.shields.io/badge/Microservices-6C63FF?style=flat-square&logo=buffer&logoColor=white" alt="Microservices">
+  <img src="https://img.shields.io/badge/Event--Driven-FF6B6B?style=flat-square&logo=apachekafka&logoColor=white" alt="Event-Driven">
+</p>
+
+**Practices**
+<p>
+  <img src="https://img.shields.io/badge/DDD-2C3E50?style=flat-square" alt="DDD">
+  <img src="https://img.shields.io/badge/Clean_Architecture-2C3E50?style=flat-square" alt="Clean Architecture">
+  <img src="https://img.shields.io/badge/SOLID-2C3E50?style=flat-square" alt="SOLID">
+  <img src="https://img.shields.io/badge/CQRS-2C3E50?style=flat-square" alt="CQRS">
+  <img src="https://img.shields.io/badge/TDD-2C3E50?style=flat-square" alt="TDD">
+  <img src="https://img.shields.io/badge/Agile%2FScrum-2C3E50?style=flat-square" alt="Agile/Scrum">
+</p>
+
+---
+
+### GitHub Stats
+
 <div align="center">
-<div>
-  <a target="_blank" href = "mailto:leandrocarlini@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-  <a target="_blank" href="https://www.linkedin.com/in/leandro-carlini" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a> 
-
+  <img height="165em" src="https://github-readme-stats.vercel.app/api?username=lcarlini&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true" alt="GitHub Stats"/>
+  <img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=lcarlini&layout=compact&langs_count=8&theme=tokyonight&hide_border=true" alt="Top Languages"/>
 </div>
-</div>
-
-
-
-##
 
 <div align="center">
-  <a href="https://github.com/lcarlini">
-  <img height="180em" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=lcarlini&show_icons=true&theme=synthwave&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=lcarlini&layout=compact&langs_count=7&theme=synthwave"/>
+  <img src="https://raw.githubusercontent.com/lcarlini/lcarlini/main/assets/snake/snake.svg" alt="Snake animation"/>
 </div>
 
+---
 
-###
-<div align="center">
-  <img src="https://profile-counter.glitch.me/lcarlini/count.svg?"  />
-</div>
-
-###
-
-<div align="center">
-   <img src="https://raw.githubusercontent.com/lcarlini/lcarlini/1f6b42ae0a9224fb5a47de65342f910cc8267a9e/assets/snake/snake.svg" alt="Snake animation" />
-</div>
-
-<!--
-Languages and Tools:
-● .Net Core, .Net Framework, ASP .Net MVC, Web Forms, Windows Services, NuGet Packages among others.
-● C#, AutoMapper, SignalIR, Hangfire, PowerShell, Python, NPM, JavaScript, TypeScript, JQuery, ES6 and Webpack.
-● REST API, GraphQL, gRPC, WCF, SOA, JSon and OAuth.
-● MSSQL Server, CosmosDB, DynamoDB, MySQL, MariaDB, MongoDB and Redis
-● ADO .Net, Entity Framework Core and Dapper.
-● NodeJS, Express, Mongoose, Sequelize, Request, AWS SDK among others.
-● Angular, CSS, HTML, Syncfusion, Razor, React Native and Bootstrap.
-● Azure DevOps, DevSecOps, CI/CD, ALM, TFS, VSTS, GitLab, Docker, Docker Compose, Chef Infra and Chocolatey.
-● GIT and TFVC.
-● Azure (Azure Functions, Pipelines, ARM Templates, Resources Groups, Azure Storage, Monitor, Key Vault, Alerts, ServiceBus, LogicApps, API Management, Web Apps, Application Insights, Log Analytics, SQL Database, SQL Elastic Pool, AD, VM among others), Azure SDK and PowerApps.
-● AWS (Amplify, AppSync, Cognito, Elastic Beanstalk, CodeCommit, EC2, S3, IAM, Cloud Formation, Lambda, CloudWatch, RDS, SNS, SQS, KMS, VPC and Systems Manager) and AWS SDK.
-● IaaS, PaaS, FaaS and SaaS.
-● IoC/DI, Microservices, Serverless, Clean Code, Best Practices, OOP, SOLID, Design Patterns and Data Modeling.
-● MSTest, XUnit, NUnit, Moq, Rhino Mocks, SpecFlow, Selenium, MochaJS, SinonJS, ChaiJS, DDD, TDD and BDD.
-● ReSharper, Postman, Swagger, Service Insight, Polly, FluentValidation, Password Manager, SumoLogic, GrayLog, NLog, Serilog, Stripe, ServiceNow, SoapUI and Fiddler.
-● Agile Scrum, Azure Boards, Kanban, Jira, SAFe, Confluence and Slack.
-
-👇🏼 Check out my Github page.
-https://github.com/lcarlini
-
-📫 Contact me: leandrocarlini@gmail.com
-
-Software Engineer | Full Stack Developer | C# Developer | .Net Developer | Azure Developer | AWS Developer | Software Developer | Back-End Developer | Solutions Architect | Software Architect | Specialist Software | Technical Leader | Software Consultant
--->
+<p align="center">
+  <em>Let's build something reliable, scalable, and worth talking about.</em><br>
+  <a href="https://lcarlini.github.io/lcarlini/">Portfolio</a> ·
+  <a href="https://www.linkedin.com/in/leandro-carlini/">LinkedIn</a> ·
+  <a href="mailto:leandrocarlini@gmail.com">Email</a>
+</p>
