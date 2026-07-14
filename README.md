@@ -99,6 +99,18 @@ decisions compound into real business impact.
 
 <br>
 
+## 📈 GitHub Activity
+
+<div align="center">
+  <img src="https://streak-stats.demolab.com/?user=lcarlini&theme=tokyonight&hide_border=true&background=0D0F1A&ring=7C6CFF&fire=F472B6&currStreakLabel=22D3EE" alt="GitHub Streak" />
+</div>
+
+<div align="center">
+  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=lcarlini&theme=tokyo-night&bg_color=0d0f1a&color=7c6cff&line=22d3ee&point=f472b6&area=true&hide_border=true" alt="Contribution graph" />
+</div>
+
+<br>
+
 ## 🎯 Engineering principles
 
 > **Simplicity is a feature.** The best architecture is the simplest one that solves the problem well.
