@@ -6,7 +6,7 @@
 <!-- Typing tagline -->
 <p align="center">
   <a href="https://lcarlini.github.io/lcarlini/">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=1000&color=22D3EE&center=true&vCenter=true&width=720&lines=Designing+scalable%2C+cloud-native+systems;.NET+%C2%B7+Azure+%C2%B7+AWS+%C2%B7+Microservices+%C2%B7+Event-Driven;Turning+complex+problems+into+reliable+software" alt="Typing tagline" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=22&pause=1000&color=22D3EE&center=true&vCenter=true&width=720&height=45&lines=Designing+scalable%2C+cloud-native+systems;.NET+%7C+Azure+%7C+AWS+%7C+Microservices+%7C+Event-Driven;Turning+complex+problems+into+reliable+software" alt="Typing SVG" />
   </a>
 </p>
 
