@@ -210,6 +210,10 @@ const pt = {
   "p5.p": "Mentoria, reviews e padrões compartilhados tornam todos melhores — resultados duradouros vêm de equipes fortes.",
   "p6.t": "Nunca parar de aprender",
   "p6.p": "De cloud-native a engenharia assistida por IA, manter a curiosidade é como continuo entregando na fronteira.",
+  "p7.t": "Honestidade",
+  "p7.p": "Comunicação clara sobre riscos, trade-offs e progresso — dizer o que é verdade mesmo quando é desconfortável, para que o time decida bem.",
+  "p8.t": "Comprometimento",
+  "p8.p": "Assumir resultados de ponta a ponta — cumprir o que foi prometido, terminar o que foi começado e manter accountability quando fica difícil.",
 
   "contact.titleHtml": "Vamos construir algo <span class=\"gradient-text\">que valha a pena contar</span>",
   "contact.lead": "Aberto a oportunidades em engenharia staff e sênior, arquitetura e liderança técnica. Entre em contato — fico feliz em compartilhar currículo ou aprofundar os detalhes.",
@@ -411,6 +415,10 @@ const es = {
   "p5.p": "Mentoría, reviews y estándares compartidos hacen mejores a todos — resultados duraderos vienen de equipos fuertes.",
   "p6.t": "Nunca dejar de aprender",
   "p6.p": "De cloud-native a ingeniería asistida por IA, mantener la curiosidad es cómo sigo entregando en la frontera.",
+  "p7.t": "Honestidad",
+  "p7.p": "Comunicación clara sobre riesgos, trade-offs y progreso — decir lo que es verdad incluso cuando incomoda, para que el equipo decida bien.",
+  "p8.t": "Compromiso",
+  "p8.p": "Asumir los resultados de extremo a extremo — cumplir lo prometido, terminar lo empezado y mantener accountability cuando se pone difícil.",
 
   "contact.titleHtml": "Construyamos algo <span class=\"gradient-text\">que valga la pena contar</span>",
   "contact.lead": "Abierto a oportunidades en ingeniería staff y senior, arquitectura y liderazgo técnico. Escríbeme — feliz de compartir currículum o profundizar en los detalles.",
