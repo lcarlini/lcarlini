@@ -33,12 +33,14 @@ currently: Architecting scalable, cloud-native platforms on .NET + Azure/AWS
 
 I engineer **distributed, cloud-native systems** that stay reliable under load and clear to reason about.
 My work lives in the hard parts of software — **architecture, scalability, and system reliability** — where good
-decisions compound into real business impact.
+decisions compound into real business impact. I've worked on **internal product initiatives** and with
+**international teams across cultures**, in English-speaking environments (including on-site in the Netherlands).
 
 - 🏗️ Architecting **event-driven** & **microservice** platforms on **Azure** and **AWS**
 - 🚀 Modernizing legacy systems and leading **multi-cloud migrations**
 - 🔬 Designing **high-throughput data pipelines** and distributed systems
 - 🤖 Applying **AI-assisted workflows** to accelerate delivery & developer productivity
+- 🌍 Collaborating daily in **English** with multicultural, international engineering teams
 - 🧭 Leading global teams as **Tech Lead** — mentoring, reviews, and architecture standards
 
 <br>
