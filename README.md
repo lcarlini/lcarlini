@@ -115,75 +115,73 @@ Credentials that map to real delivery problems — cloud apps, security, AI, Dev
 <table>
   <tr>
     <td width="90" align="center" valign="top">
-      <img src="assets/certs/ms-associate.svg" width="72" alt="Microsoft Associate" />
+      <a href="https://learn.microsoft.com/en-us/users/leandrocarlinimingorance-2739/credentials/dd379b8ce8959585"><img src="assets/certs/ms-associate.svg" width="72" alt="Microsoft Associate" /></a>
     </td>
     <td valign="top">
-      <strong>Microsoft Certified: Azure Developer Associate</strong> · Microsoft · Dec 2022 – Dec 2026<br>
-      <em>Solves:</em> Building, deploying, and troubleshooting Azure apps that must scale, integrate, and stay maintainable in production.<br>
-      <sub>Credential ID <code>DD379B8CE8959585</code></sub>
+      <strong><a href="https://learn.microsoft.com/en-us/users/leandrocarlinimingorance-2739/credentials/dd379b8ce8959585">Microsoft Certified: Azure Developer Associate</a></strong> · Microsoft · Dec 2022<br>
+      <em>Solves:</em> Building, deploying, and troubleshooting Azure apps that must scale, integrate, and stay maintainable in production.
     </td>
   </tr>
   <tr>
     <td width="90" align="center" valign="top">
-      <img src="assets/certs/ms-fundamentals.svg" width="72" alt="Microsoft Fundamentals" />
+      <a href="https://www.credly.com/badges/ae3377eb-2bd3-4b1a-8504-cc6f70cf24b1/linked_in_profile"><img src="assets/certs/ms-fundamentals.svg" width="72" alt="Microsoft Fundamentals" /></a>
     </td>
     <td valign="top">
-      <strong>Microsoft Certified: Security, Compliance, and Identity Fundamentals</strong> · Microsoft · Oct 2022<br>
+      <strong><a href="https://www.credly.com/badges/ae3377eb-2bd3-4b1a-8504-cc6f70cf24b1/linked_in_profile">Microsoft Certified: Security, Compliance, and Identity Fundamentals</a></strong> · Microsoft · Oct 2022<br>
       <em>Solves:</em> Designing systems that protect data, manage identity correctly, and meet security &amp; compliance expectations.
     </td>
   </tr>
   <tr>
     <td width="90" align="center" valign="top">
-      <img src="assets/certs/ms-fundamentals.svg" width="72" alt="Microsoft Fundamentals" />
+      <a href="https://www.credly.com/badges/57c4fb02-de74-426e-8c02-319be54708d9/linked_in_profile"><img src="assets/certs/ms-fundamentals.svg" width="72" alt="Microsoft Fundamentals" /></a>
     </td>
     <td valign="top">
-      <strong>Microsoft Certified: Azure AI Fundamentals</strong> · Microsoft · Oct 2022<br>
+      <strong><a href="https://www.credly.com/badges/57c4fb02-de74-426e-8c02-319be54708d9/linked_in_profile">Microsoft Certified: Azure AI Fundamentals</a></strong> · Microsoft · Oct 2022<br>
       <em>Solves:</em> Applying Azure AI services responsibly — knowing when ML/AI adds value vs. when a simpler approach wins.
     </td>
   </tr>
   <tr>
     <td width="90" align="center" valign="top">
-      <img src="assets/certs/ms-fundamentals.svg" width="72" alt="Microsoft Fundamentals" />
+      <a href="https://www.credly.com/badges/8511b505-dbb8-4875-915d-ecc471874efa/linked_in_profile"><img src="assets/certs/ms-fundamentals.svg" width="72" alt="Microsoft Fundamentals" /></a>
     </td>
     <td valign="top">
-      <strong>Microsoft Certified: Azure Fundamentals</strong> · Microsoft · Jul 2020<br>
+      <strong><a href="https://www.credly.com/badges/8511b505-dbb8-4875-915d-ecc471874efa/linked_in_profile">Microsoft Certified: Azure Fundamentals</a></strong> · Microsoft · Jul 2020<br>
       <em>Solves:</em> Choosing the right Azure services for cost, scale, and workload fit — cloud fluency before deep specialization.
     </td>
   </tr>
   <tr>
     <td width="90" align="center" valign="top">
-      <img src="assets/certs/certiprof.svg" width="72" alt="Certiprof" />
+      <a href="https://www.credly.com/badges/8f6075bc-9326-4c2d-81e4-89e833f14a38?source=linked_in_profile"><img src="assets/certs/certiprof.svg" width="72" alt="Certiprof" /></a>
     </td>
     <td valign="top">
-      <strong>DevOps Essentials Professional Certificate</strong> · Certiprof · Mar 2019<br>
+      <strong><a href="https://www.credly.com/badges/8f6075bc-9326-4c2d-81e4-89e833f14a38?source=linked_in_profile">DevOps Essentials Professional Certificate</a></strong> · Certiprof · Mar 2019<br>
       <em>Solves:</em> Closing the build–run gap with CI/CD, automation, and delivery practices that shorten lead time.
     </td>
   </tr>
   <tr>
     <td width="90" align="center" valign="top">
-      <img src="assets/certs/scrum.svg" width="72" alt="Scrum" />
+      <a href="https://www.credly.com/badges/c0afbe5c-43ee-4004-b926-d2aba6366a74?source=linked_in_profile"><img src="assets/certs/scrum.svg" width="72" alt="Scrum" /></a>
     </td>
     <td valign="top">
-      <strong>Scrum Foundation Professional Certificate</strong> · Certiprof · Feb 2019<br>
+      <strong><a href="https://www.credly.com/badges/c0afbe5c-43ee-4004-b926-d2aba6366a74?source=linked_in_profile">Scrum Foundation Professional Certificate</a></strong> · Certiprof · Feb 2019<br>
       <em>Solves:</em> Shipping in iterations with clear roles, feedback loops, and predictable team flow.
     </td>
   </tr>
   <tr>
     <td width="90" align="center" valign="top">
-      <img src="assets/certs/alura.svg" width="72" alt="Alura" />
+      <a href="https://cursos.alura.com.br/user/LOMC-alura/fullCertificate/e26e6f053f4eea95979a56a9945f6959"><img src="assets/certs/alura.svg" width="72" alt="Alura" /></a>
     </td>
     <td valign="top">
-      <strong>Angular Formation</strong> · Alura · Jul 2019<br>
-      <em>Solves:</em> Building maintainable frontends that consume APIs cleanly and scale with the product.<br>
-      <sub>Credential ID <code>e26e6f053f4eea95979a56a9945f6959</code></sub>
+      <strong><a href="https://cursos.alura.com.br/user/LOMC-alura/fullCertificate/e26e6f053f4eea95979a56a9945f6959">Angular Formation</a></strong> · Alura · Jul 2019<br>
+      <em>Solves:</em> Building maintainable frontends that consume APIs cleanly and scale with the product.
     </td>
   </tr>
   <tr>
     <td width="90" align="center" valign="top">
-      <img src="assets/certs/certiprof.svg" width="72" alt="Certiprof" />
+      <a href="https://www.credly.com/badges/07050fb7-966d-4696-93b9-005568441c1d?source=linked_in_profile"><img src="assets/certs/certiprof.svg" width="72" alt="Certiprof" /></a>
     </td>
     <td valign="top">
-      <strong>CertiProf® Continuous Learner</strong> · Certiprof · Jan 2019<br>
+      <strong><a href="https://www.credly.com/badges/07050fb7-966d-4696-93b9-005568441c1d?source=linked_in_profile">CertiProf® Continuous Learner</a></strong> · Certiprof · Jan 2019<br>
       <em>Solves:</em> Staying current as stacks and practices evolve — continuous skill growth as a delivery habit.
     </td>
   </tr>
