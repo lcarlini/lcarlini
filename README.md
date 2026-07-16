@@ -1,6 +1,6 @@
 <!-- Animated banner -->
 <a href="https://lcarlini.github.io/lcarlini/">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:7c6cff,50:22d3ee,100:f472b6&height=210&section=header&text=Leandro%20Carlini%20Mingorance&fontSize=42&fontColor=ffffff&fontAlignY=36&desc=Senior%20Software%20Engineer%20%C2%B7%20Solutions%20Architect%20%C2%B7%20Tech%20Lead&descSize=18&descAlignY=58&animation=fadeIn" alt="Leandro Carlini Mingorance" />
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:7c6cff,50:22d3ee,100:f472b6&height=210&section=header&text=Leandro%20Carlini%20Mingorance&fontSize=42&fontColor=ffffff&fontAlignY=36&desc=Staff%20Software%20Engineer%20%C2%B7%20Senior%20Software%20Engineer%20%C2%B7%20Solutions%20Architect%20%C2%B7%20Tech%20Lead&descSize=18&descAlignY=58&animation=fadeIn" alt="Leandro Carlini Mingorance" />
 </a>
 
 <!-- Typing tagline -->
@@ -23,7 +23,7 @@
 
 ```yaml
 name: Leandro Carlini Mingorance
-role: Senior Software Engineer · Solutions Architect · Tech Lead
+role: Staff Software Engineer · Senior Software Engineer · Solutions Architect · Tech Lead
 experience: 15+ years shipping production software
 regions: [ United States, Canada, Europe, LATAM ]
 focus: [ Cloud Architecture, Distributed Systems, Backend, AI-Assisted Delivery ]

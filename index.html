@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Leandro Carlini Mingorance — Senior Software Engineer & Architect</title>
-  <meta name="description" content="Senior Software Engineer & Solutions Architect with 15+ years designing scalable cloud-native systems and optimizing high-performance data queries on .NET, Azure, and AWS." />
+  <title>Leandro Carlini Mingorance — Staff Software Engineer · Senior Software Engineer · Architect</title>
+  <meta name="description" content="Staff Software Engineer, Senior Software Engineer & Solutions Architect with 15+ years designing scalable cloud-native systems and optimizing high-performance data queries on .NET, Azure, and AWS." />
   <meta name="author" content="Leandro Carlini Mingorance" />
   <meta name="theme-color" content="#0a0b12" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Leandro Carlini Mingorance — Senior Software Engineer" />
+  <meta property="og:title" content="Leandro Carlini Mingorance — Staff Software Engineer · Senior Software Engineer" />
   <meta property="og:description" content="Designing scalable, cloud-native systems that turn complex problems into reliable, business-driving software." />
   <meta property="og:url" content="https://lcarlini.github.io/lcarlini/" />
 
@@ -274,6 +274,30 @@
       color: #c4b5fd; font-size: .72rem;
     }
 
+    /* Projects */
+    .projects-list { display: flex; flex-direction: column; gap: 22px; }
+    .project {
+      background: linear-gradient(180deg, rgba(255,255,255,.055), rgba(255,255,255,.02));
+      border: 1px solid var(--border); border-radius: var(--radius); padding: 34px 32px;
+      transition: border-color .3s, box-shadow .3s;
+    }
+    .project:hover { border-color: rgba(124,108,255,.4); box-shadow: 0 20px 50px rgba(0,0,0,.28); }
+    .project-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 16px; margin-bottom: 22px; }
+    .project-head h3 { font-size: clamp(1.2rem, 2.4vw, 1.45rem); }
+    .project-head .when {
+      font-family: 'JetBrains Mono', monospace; font-size: .78rem; color: var(--accent-2);
+      padding: 4px 10px; border-radius: 999px; background: var(--surface); border: 1px solid var(--border);
+    }
+    .project-blocks { display: grid; gap: 18px; }
+    .project-block h4 {
+      font-family: 'JetBrains Mono', monospace; font-size: .72rem; letter-spacing: .14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 8px;
+    }
+    .project-block p, .project-block ul { color: var(--muted); font-size: .96rem; }
+    .project-block ul { padding-left: 1.15em; display: grid; gap: 6px; }
+    .project-block li::marker { color: var(--accent-2); }
+    .project .chips { margin-top: 22px; }
+
     /* Principles */
     .principles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
     .principle { padding: 26px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--border); transition: transform .3s, border-color .3s; }
@@ -313,6 +337,8 @@
       .nav-links.open a { padding: 13px 0; width: 100%; border-radius: 0; }
       .cards-grid, .principles, .stack-groups, .stats-grid, .edu-activities, .certs-grid { grid-template-columns: 1fr; }
       .edu-card { padding: 28px 22px; }
+      .project { padding: 26px 20px; }
+      .logo { font-size: .92rem; gap: 8px; }
       .cert { grid-template-columns: 56px 1fr; gap: 14px; padding: 18px; }
       .cert img { width: 56px; height: 56px; border-radius: 12px; }
     }
@@ -330,10 +356,11 @@
 
   <nav id="nav">
     <div class="container nav-inner">
-      <a href="#top" class="logo"><span class="mark">L</span> Leandro Carlini</a>
+      <a href="#top" class="logo"><span class="mark">L</span> Leandro Carlini Mingorance</a>
       <div class="nav-links" id="navLinks">
         <a href="#expertise">Expertise</a>
         <a href="#impact">Impact</a>
+        <a href="#projects">Projects</a>
         <a href="#stack">Stack</a>
         <a href="#education">Education</a>
         <a href="#certs">Certs</a>
@@ -417,6 +444,425 @@
         </div>
         <div class="stat reveal"><div class="num gradient-text">Millions</div><div class="label">Records in real-time data pipelines</div></div>
         <div class="stat reveal"><div class="num gradient-text">∞</div><div class="label">Curiosity for the next hard problem</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Selected work</span>
+        <h2>Projects that moved the needle</h2>
+        <p>From cloud automation and loyalty platforms to airline systems and thesis research — challenges, how they were built, and the outcomes that followed.</p>
+      </div>
+      <div class="projects-list">
+
+        <article class="project reveal">
+          <div class="project-head">
+            <h3>Portfolio Management Platform</h3>
+          </div>
+          <div class="project-blocks">
+            <div class="project-block">
+              <h4>Overview &amp; Challenge</h4>
+              <p>A portfolio management and control platform for investment operations needed a new version: the legacy system blocked new functionality, carried unresolved issues, and could not keep pace with modern operational workflows.</p>
+            </div>
+            <div class="project-block">
+              <h4>Development Process</h4>
+              <ul>
+                <li>Led implementation of the new platform on modern .NET, fixing legacy limitations and unlocking capabilities that were previously impossible.</li>
+                <li>Designed web applications and Azure Functions for scalable workflows, background processing, and operational automation.</li>
+                <li>Built SQL Server structures and processing routines focused on data quality, consistency, and performance for analytics and semantic modeling.</li>
+                <li>Drove architecture discussions with the Product Owner and used AI-assisted workflows to accelerate delivery across the lifecycle.</li>
+              </ul>
+            </div>
+            <div class="project-block">
+              <h4>Achievements &amp; Impact</h4>
+              <p>Delivered a modern foundation for investment operations with new functionality, stronger data pipelines for downstream analytics, and faster iteration through architecture alignment and AI-assisted engineering.</p>
+            </div>
+          </div>
+          <div class="chips"><span class="chip">.NET</span><span class="chip">Azure Functions</span><span class="chip">SQL Server</span><span class="chip">Entity Framework</span><span class="chip">CI/CD</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-head">
+            <h3>Real-time Matchback System</h3>
+          </div>
+          <div class="project-blocks">
+            <div class="project-block">
+              <h4>Overview &amp; Challenge</h4>
+              <p>An automated direct-mail marketing platform needed integrations and a data architecture that could handle millions of records — with accurate, real-time visibility into campaign growth, revenue, and cost.</p>
+            </div>
+            <div class="project-block">
+              <h4>Development Process</h4>
+              <ul>
+                <li>Led integrations with Klaviyo, Shopify, and ServiceTitan to support growth and new client acquisition.</li>
+                <li>Designed a scalable pipeline for ingestion, sanitization, and high-performance dynamic filtering.</li>
+                <li>Built a real-time Matchback system so users could track marketing performance with actionable metrics.</li>
+                <li>Led architecture reviews, PoCs, risk discussions, and hiring support alongside strategic decision-making.</li>
+              </ul>
+            </div>
+            <div class="project-block">
+              <h4>Achievements &amp; Impact</h4>
+              <p>The Matchback system helped drive over $8M in new customer subscriptions, attracted investors, and became a core growth engine for the product.</p>
+            </div>
+          </div>
+          <div class="chips"><span class="chip">.NET Core</span><span class="chip">Azure</span><span class="chip">Microservices</span><span class="chip">Service Bus</span><span class="chip">SQL Server</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-head">
+            <h3>Cloud Migration &amp; AI Process Automation</h3>
+          </div>
+          <div class="project-blocks">
+            <div class="project-block">
+              <h4>Overview &amp; Challenge</h4>
+              <p>A monolithic platform needed to move to Azure with a rebuilt admin experience, while internal processes still depended on heavy manual work across photos, invoices, translations, and product feedback.</p>
+            </div>
+            <div class="project-block">
+              <h4>Development Process</h4>
+              <ul>
+                <li>Helped migrate the monolith to Azure and rebuild the admin system for better scalability and maintainability.</li>
+                <li>Led a newly formed team after acquisitions — code reviews, onboarding, roadmap, and technical decisions.</li>
+                <li>Applied AI to automate face blurring, invoice extraction, translation, and text analysis inside product workflows.</li>
+              </ul>
+            </div>
+            <div class="project-block">
+              <h4>Achievements &amp; Impact</h4>
+              <p>Improved operational efficiency and reduced cloud/ops cost through modernization, while AI automation cut manual effort and generated measurable financial gains.</p>
+            </div>
+          </div>
+          <div class="chips"><span class="chip">.NET Core</span><span class="chip">Azure</span><span class="chip">Terraform</span><span class="chip">Cosmos DB</span><span class="chip">AI Engineering</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-head">
+            <h3>Cloud Automation Solutions</h3>
+          </div>
+          <div class="project-blocks">
+            <div class="project-block">
+              <h4>Overview &amp; Challenge</h4>
+              <p>A client needed to move from GoCD to Azure DevOps and strengthen automation for server and application deployments across a multi-cloud environment.</p>
+            </div>
+            <div class="project-block">
+              <h4>Development Process</h4>
+              <ul>
+                <li>Migrated applications from GoCD to Azure DevOps.</li>
+                <li>Implemented AWS Lambda functions to dynamically adjust EC2 instance sizes and disk volumes during deployment.</li>
+                <li>Built PowerShell automation for servers and apps, integrated the Azure DevOps API, and used ARM Templates for Azure Apps.</li>
+              </ul>
+            </div>
+            <div class="project-block">
+              <h4>Achievements &amp; Impact</h4>
+              <p>Cut significant time from the development cycle, improved deployment stability, and freed other teams to focus on application development.</p>
+            </div>
+          </div>
+          <div class="chips"><span class="chip">Microsoft Azure</span><span class="chip">AWS</span><span class="chip">PowerShell</span><span class="chip">Azure DevOps</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-head">
+            <h3>Improved Cloud Application Monitoring System</h3>
+          </div>
+          <div class="project-blocks">
+            <div class="project-block">
+              <h4>Overview &amp; Challenge</h4>
+              <p>A customer needed stronger monitoring for cloud applications — Azure Functions health, Dead Letter Queues, and high CPU on SQL Servers — with alerts routed through SumoLogic to email and Microsoft Teams.</p>
+            </div>
+            <div class="project-block">
+              <h4>Development Process</h4>
+              <ul>
+                <li>Implemented Azure Alerts for proactive service monitoring.</li>
+                <li>Built .NET Core NuGet packages to automate SumoLogic alert creation during deployment, with custom monitoring queries shipped alongside apps.</li>
+                <li>Created an Azure Function to route triggered alerts to the right team via a SumoLogic connector for logging and notifications.</li>
+              </ul>
+            </div>
+            <div class="project-block">
+              <h4>Achievements &amp; Impact</h4>
+              <p>Saved time in the delivery cycle, improved deployment stability, and let teams focus on their apps while still producing root-cause-oriented reports and metrics.</p>
+            </div>
+          </div>
+          <div class="chips"><span class="chip">Microsoft Azure</span><span class="chip">.NET Core</span><span class="chip">SumoLogic</span><span class="chip">SQL</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-head">
+            <h3>Refactoring using Logic Apps</h3>
+          </div>
+          <div class="project-blocks">
+            <div class="project-block">
+              <h4>Overview &amp; Challenge</h4>
+              <p>Third-party Informatica Data Integration jobs carried recurring license cost. The goal was to remake those integrations with Logic Apps without losing reliability.</p>
+            </div>
+            <div class="project-block">
+              <h4>Development Process</h4>
+              <p>Rebuilt Informatica Data Integration jobs as Logic Apps workflows, preserving integration behavior while simplifying operations and ownership.</p>
+            </div>
+            <div class="project-block">
+              <h4>Achievements &amp; Impact</h4>
+              <p>Reduced license cost and saved development time on future integration work.</p>
+            </div>
+          </div>
+          <div class="chips"><span class="chip">Logic Apps</span><span class="chip">Azure</span><span class="chip">SQL</span><span class="chip">.NET</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-head">
+            <h3>Loyalty Banking Account</h3>
+          </div>
+          <div class="project-blocks">
+            <div class="project-block">
+              <h4>Overview &amp; Challenge</h4>
+              <p>The platform managed participant registration and current accounts (credit, debit, transfer, refund, balance, statement, and integrations). Growth exposed performance and scalability limits, heavy business logic in procedures, and a fragile manual process for splitting large files — often risking SLA breaches.</p>
+            </div>
+            <div class="project-block">
+              <h4>Development Process</h4>
+              <ul>
+                <li>Replaced FTP uploads with Azure-based batch processing for better scalability.</li>
+                <li>Built an API integrated with ServiceNow for client interaction, full file tracking, and pre-validation of invalid files.</li>
+                <li>Treated each file line as a Service Bus message so Azure Functions could scale processing; completion events notified dependent systems.</li>
+                <li>Added scheduling for multi-million-record files, including overnight runs for long workloads.</li>
+              </ul>
+            </div>
+            <div class="project-block">
+              <h4>Achievements &amp; Impact</h4>
+              <p>Improved UX, resolved architectural issues, achieved true large-file scalability, and contributed to a 27% increase in company revenue after the improvements.</p>
+            </div>
+          </div>
+          <div class="chips"><span class="chip">SQL</span><span class="chip">.NET</span><span class="chip">Azure Functions</span><span class="chip">Service Bus</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-head">
+            <h3>Order Authorization API</h3>
+          </div>
+          <div class="project-blocks">
+            <div class="project-block">
+              <h4>Overview &amp; Challenge</h4>
+              <p>Real-time order authorization checked balance, partner stock, and third-party credit-card APIs synchronously — causing performance and stability failures under peak sales such as Black Friday.</p>
+            </div>
+            <div class="project-block">
+              <h4>Development Process</h4>
+              <p>Refactored order authorization, transfer, and refund flows to messaging with scaling and stronger fault control, keeping transient issues off the client path while keeping database transactions consistent.</p>
+            </div>
+            <div class="project-block">
+              <h4>Achievements &amp; Impact</h4>
+              <p>Improved user experience, fixed architectural bottlenecks, and made the process scalable under high load.</p>
+            </div>
+          </div>
+          <div class="chips"><span class="chip">Microsoft Azure</span><span class="chip">SQL</span><span class="chip">Messaging</span><span class="chip">.NET</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-head">
+            <h3>Like+ Card</h3>
+          </div>
+          <div class="project-blocks">
+            <div class="project-block">
+              <h4>Overview &amp; Challenge</h4>
+              <p>Like+ Card is a physical card that lets participants convert loyalty points into cash usable at partner establishments — extending traditional loyalty with more flexible, tangible benefits.</p>
+            </div>
+            <div class="project-block">
+              <h4>Development Process</h4>
+              <p>Built the platform with Angular and microservices: card application, activation/unlock, top-up, loss/theft reporting, and real-time tracking of balance and request status.</p>
+            </div>
+            <div class="project-block">
+              <h4>Achievements &amp; Impact</h4>
+              <p>Launched a successful new product line, increased revenue, enabled multiple third-party integrations, and raised the bar for loyalty program offerings.</p>
+            </div>
+          </div>
+          <div class="chips"><span class="chip">Angular</span><span class="chip">Microservices</span><span class="chip">Microsoft Azure</span><span class="chip">SQL</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-head">
+            <h3>New Cache System</h3>
+          </div>
+          <div class="project-blocks">
+            <div class="project-block">
+              <h4>Overview &amp; Challenge</h4>
+              <p>Balance and statement calculations were heavy enough to hurt platform responsiveness, so a dedicated cache layer was required.</p>
+            </div>
+            <div class="project-block">
+              <h4>Development Process</h4>
+              <p>Implemented a Redis cache for balance and statement with messaging control that updates the cache only when the database changes.</p>
+            </div>
+            <div class="project-block">
+              <h4>Achievements &amp; Impact</h4>
+              <p>Improved user experience and overall system performance for the most frequent account queries.</p>
+            </div>
+          </div>
+          <div class="chips"><span class="chip">Redis</span><span class="chip">Microsoft Azure</span><span class="chip">SQL</span><span class="chip">Messaging</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-head">
+            <h3>Point Expiration System</h3>
+          </div>
+          <div class="project-blocks">
+            <div class="project-block">
+              <h4>Overview &amp; Challenge</h4>
+              <p>The point expiration flow had transaction issues that caused financial loss. Participants can use balance until 23:59 on the last valid day, which made correct cutoff handling critical.</p>
+            </div>
+            <div class="project-block">
+              <h4>Development Process</h4>
+              <p>Introduced a Redis lock one day before expiration to force additional validation. After expiration is confirmed, the lock is removed and expiring transactions become Service Bus messages processed by an Azure Function for scalable execution.</p>
+            </div>
+            <div class="project-block">
+              <h4>Achievements &amp; Impact</h4>
+              <p>Protected revenue that was previously being lost and improved the reliability and performance of expiration processing.</p>
+            </div>
+          </div>
+          <div class="chips"><span class="chip">Redis</span><span class="chip">Azure Functions</span><span class="chip">Service Bus</span><span class="chip">SQL</span><span class="chip">.NET</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-head">
+            <h3>Monitoring API</h3>
+          </div>
+          <div class="project-blocks">
+            <div class="project-block">
+              <h4>Overview &amp; Challenge</h4>
+              <p>Operations needed continuous checks on whether APIs were online and protected, and whether Dead Letter queues held messages — with findings sent to a 24/7 monitoring board.</p>
+            </div>
+            <div class="project-block">
+              <h4>Development Process</h4>
+              <p>Created a .NET Core API to probe services and push status data to the monitoring board.</p>
+            </div>
+            <div class="project-block">
+              <h4>Achievements &amp; Impact</h4>
+              <p>Enabled assertive operations: product teams and support could detect and correct flaws faster.</p>
+            </div>
+          </div>
+          <div class="chips"><span class="chip">.NET Core</span><span class="chip">SQL</span><span class="chip">Observability</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-head">
+            <h3>Check-in Offline</h3>
+          </div>
+          <div class="project-blocks">
+            <div class="project-block">
+              <h4>Overview &amp; Challenge</h4>
+              <p>A Brazilian airline needed passenger check-in to continue when the online system was down for any reason.</p>
+            </div>
+            <div class="project-block">
+              <h4>Development Process</h4>
+              <p>Built an ASP.NET MVC admin interface with the latest data available at failure time, replicating core Navitaire capabilities via APIs. When online service returned, the system resynchronized passengers and flights and surfaced conflicts that required human resolution.</p>
+            </div>
+            <div class="project-block">
+              <h4>Achievements &amp; Impact</h4>
+              <p>Rolled out across Brazilian airports, reducing check-in time during outages and minimizing complications from fully manual procedures.</p>
+            </div>
+          </div>
+          <div class="chips"><span class="chip">ASP.NET MVC</span><span class="chip">SQL</span><span class="chip">.NET</span><span class="chip">APIs</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-head">
+            <h3>IXBG (Excess Baggage)</h3>
+          </div>
+          <div class="project-blocks">
+            <div class="project-block">
+              <h4>Overview &amp; Challenge</h4>
+              <p>Airport regulation changes required a system to calculate and charge excess baggage on the boarding pass before departure.</p>
+            </div>
+            <div class="project-block">
+              <h4>Development Process</h4>
+              <p>Integrated IXBG with existing airport systems while enforcing the new taxation rules, keeping the flow accurate and usable for frontline staff.</p>
+            </div>
+            <div class="project-block">
+              <h4>Achievements &amp; Impact</h4>
+              <p>Brought operations into compliance with the new regulations and increased revenue through clearer, more efficient excess-baggage collection.</p>
+            </div>
+          </div>
+          <div class="chips"><span class="chip">SQL</span><span class="chip">.NET</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-head">
+            <h3>Signal</h3>
+          </div>
+          <div class="project-blocks">
+            <div class="project-block">
+              <h4>Overview &amp; Challenge</h4>
+              <p>Travel agencies were canceling reservations close to flight dates. Signal was built to apply contractual extra charges that discourage late cancellations.</p>
+            </div>
+            <div class="project-block">
+              <h4>Development Process</h4>
+              <p>Implemented a service that identifies canceled flights and, according to contract rules, generates invoices for the responsible travel agencies.</p>
+            </div>
+            <div class="project-block">
+              <h4>Achievements &amp; Impact</h4>
+              <p>Recovered revenue that was previously lost to last-minute cancellations.</p>
+            </div>
+          </div>
+          <div class="chips"><span class="chip">SQL</span><span class="chip">.NET</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-head">
+            <h3>Travel Agency Registration</h3>
+          </div>
+          <div class="project-blocks">
+            <div class="project-block">
+              <h4>Overview &amp; Challenge</h4>
+              <p>Agency onboarding still relied on a Windows desktop application. The business needed a friendlier web experience for individual and batch registration.</p>
+            </div>
+            <div class="project-block">
+              <h4>Development Process</h4>
+              <p>Replaced the legacy Windows app with an ASP.NET MVC interface supporting manual and batch travel-agency registration.</p>
+            </div>
+            <div class="project-block">
+              <h4>Achievements &amp; Impact</h4>
+              <p>Improved user experience and resolved several architectural problems inherited from the desktop system.</p>
+            </div>
+          </div>
+          <div class="chips"><span class="chip">ASP.NET MVC</span><span class="chip">SQL</span><span class="chip">.NET</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-head">
+            <h3>IPVA System</h3>
+          </div>
+          <div class="project-blocks">
+            <div class="project-block">
+              <h4>Overview &amp; Challenge</h4>
+              <p>Central system for managing and tracking vehicles in São Paulo state, focused on IPVA (vehicle tax) control and monitoring.</p>
+            </div>
+            <div class="project-block">
+              <h4>Development Process</h4>
+              <p>Built a multi-integration service connecting Receita Federal, Cadesp, and Detran via WCF, text-file processing, and APIs. Delivered a .NET web interface to present integration results and unify data for comprehensive reports.</p>
+            </div>
+            <div class="project-block">
+              <h4>Achievements &amp; Impact</h4>
+              <p>Improved owner-address accuracy for tax charges and enabled valuable reports and metrics for administrative oversight of vehicle taxation.</p>
+            </div>
+          </div>
+          <div class="chips"><span class="chip">SQL</span><span class="chip">.NET</span><span class="chip">WCF</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-head">
+            <h3>SecureDocs: Mobile Document Control</h3>
+            <span class="when">Undergraduate Thesis · 2012</span>
+          </div>
+          <div class="project-blocks">
+            <div class="project-block">
+              <h4>Overview &amp; Challenge</h4>
+              <p>For the undergraduate thesis, conceptualized and developed SecureDocs — an Android app that enables document exchange between employees and their company even outside the corporate network, while preserving high security and privacy standards.</p>
+            </div>
+            <div class="project-block">
+              <h4>Development Process</h4>
+              <p>Engineered as an Android client with a secure server connection and encrypted file transfer. The companion client/server side was built with .NET C# for a reliable end-to-end experience.</p>
+            </div>
+            <div class="project-block">
+              <h4>Achievements &amp; Impact</h4>
+              <p>Presented as the Undergraduate Thesis project and received the highest possible score — validating the approach to secure corporate document control.</p>
+            </div>
+          </div>
+          <div class="chips"><span class="chip">Android</span><span class="chip">.NET</span><span class="chip">SQL</span><span class="chip">Encryption</span></div>
+        </article>
+
       </div>
     </div>
   </section>
@@ -616,7 +1062,7 @@
     <div class="container">
       <div class="contact-card reveal">
         <h2>Let's build something <span class="gradient-text">worth talking about</span></h2>
-        <p>Open to senior engineering, architecture, and technical leadership opportunities. Reach out — happy to share a résumé or dive into the details.</p>
+        <p>Open to staff and senior engineering, architecture, and technical leadership opportunities. Reach out — happy to share a résumé or dive into the details.</p>
         <div class="contact-actions">
           <a href="mailto:leandrocarlini@gmail.com" class="btn btn-primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg> Email me</a>
           <a href="https://www.linkedin.com/in/leandro-carlini/" class="btn btn-ghost" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg> LinkedIn</a>
@@ -667,7 +1113,7 @@
     });
 
     // Typing effect
-    const roles = ['Senior Software Engineer', 'Solutions Architect', 'Tech Lead', 'Cloud & DevOps Engineer', 'AI-Assisted Builder'];
+    const roles = ['Staff Software Engineer', 'Senior Software Engineer', 'Solutions Architect', 'Tech Lead', 'Cloud & DevOps Engineer', 'AI-Assisted Builder'];
     const typed = document.getElementById('typed');
     let ri = 0, ci = 0, deleting = false;
     (function type() {
@@ -722,7 +1168,7 @@
     }
 
     // Active nav link
-    const sections = ['expertise','impact','stack','education','certs','principles'].map(id => document.getElementById(id));
+    const sections = ['expertise','impact','projects','stack','education','certs','principles'].map(id => document.getElementById(id));
     const navA = [...document.querySelectorAll('.nav-links a')];
     const navIO = new IntersectionObserver((entries) => {
       entries.forEach(e => {
