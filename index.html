@@ -313,8 +313,13 @@
     .lang-switch button {
       appearance: none; border: 0; cursor: pointer; font-family: 'JetBrains Mono', monospace;
       font-size: .72rem; font-weight: 600; letter-spacing: .04em;
-      padding: 6px 10px; border-radius: 999px; color: var(--muted);
+      padding: 5px 9px; border-radius: 999px; color: var(--muted);
       background: transparent; transition: .2s;
+      display: inline-flex; align-items: center; gap: 6px;
+    }
+    .lang-switch button img {
+      width: 16px; height: 12px; border-radius: 2px; object-fit: cover;
+      box-shadow: 0 0 0 1px rgba(255,255,255,.15);
     }
     .lang-switch button:hover { color: var(--text); }
     .lang-switch button.active {
@@ -394,9 +399,15 @@
         <a href="#principles" data-i18n="nav.principles">Principles</a>
         <a href="https://github.com/lcarlini" class="nav-cta" target="_blank" rel="noopener" data-i18n="nav.github">GitHub ↗</a>
         <div class="lang-switch" role="group" aria-label="Language" data-i18n-aria="lang.label">
-          <button type="button" data-lang="en" class="active" aria-pressed="true">EN</button>
-          <button type="button" data-lang="pt" aria-pressed="false">PT</button>
-          <button type="button" data-lang="es" aria-pressed="false">ES</button>
+          <button type="button" data-lang="en" class="active" aria-pressed="true" title="English">
+            <img src="https://flagcdn.com/us.svg" alt="" width="16" height="12" loading="lazy"> EN
+          </button>
+          <button type="button" data-lang="pt" aria-pressed="false" title="Português (Brasil)">
+            <img src="https://flagcdn.com/br.svg" alt="" width="16" height="12" loading="lazy"> PT
+          </button>
+          <button type="button" data-lang="es" aria-pressed="false" title="Español">
+            <img src="https://flagcdn.com/es.svg" alt="" width="16" height="12" loading="lazy"> ES
+          </button>
         </div>
       </div>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
