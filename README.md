@@ -99,6 +99,15 @@ decisions compound into real business impact.
 
 <br>
 
+## 🎓 Education
+
+**Bachelor's Degree in Computer Engineering** · Centro Universitário Facens (Sorocaba College of Engineering)  
+*Systems Analysis, Development, and Architecture* · Graduated December 2012 · 5-year program
+
+A five-year immersion in designing, developing, and managing computational systems — hardware, software, networks, and embedded systems — with a focus on building innovative solutions across communications, automation, and AI.
+
+<br>
+
 ## 📈 GitHub Activity
 
 <div align="center">
