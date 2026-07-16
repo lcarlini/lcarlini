@@ -297,6 +297,33 @@
     .project-block ul { padding-left: 1.15em; display: grid; gap: 6px; }
     .project-block li::marker { color: var(--accent-2); }
     .project .chips { margin-top: 22px; }
+    .projects-list:not(.is-expanded) .project:nth-child(n + 4) { display: none; }
+    .projects-more-wrap {
+      display: flex; justify-content: center; margin-top: 28px;
+    }
+    .projects-more-wrap .btn { min-width: 220px; justify-content: center; }
+
+
+    /* Language switcher */
+    .lang-switch {
+      display: inline-flex; align-items: center; gap: 2px; margin-left: 10px;
+      padding: 3px; border-radius: 999px; background: var(--surface);
+      border: 1px solid var(--border);
+    }
+    .lang-switch button {
+      appearance: none; border: 0; cursor: pointer; font-family: 'JetBrains Mono', monospace;
+      font-size: .72rem; font-weight: 600; letter-spacing: .04em;
+      padding: 6px 10px; border-radius: 999px; color: var(--muted);
+      background: transparent; transition: .2s;
+    }
+    .lang-switch button:hover { color: var(--text); }
+    .lang-switch button.active {
+      color: #fff; background: linear-gradient(135deg, var(--accent), #a855f7);
+      box-shadow: 0 4px 14px rgba(124,108,255,.35);
+    }
+    @media (max-width: 680px) {
+      .lang-switch { margin: 12px 0 4px; align-self: flex-start; }
+    }
 
     /* Principles */
     .principles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
@@ -358,14 +385,19 @@
     <div class="container nav-inner">
       <a href="#top" class="logo"><span class="mark">L</span> Leandro Carlini Mingorance</a>
       <div class="nav-links" id="navLinks">
-        <a href="#expertise">Expertise</a>
-        <a href="#impact">Impact</a>
-        <a href="#projects">Projects</a>
-        <a href="#stack">Stack</a>
-        <a href="#education">Education</a>
-        <a href="#certs">Certs</a>
-        <a href="#principles">Principles</a>
-        <a href="https://github.com/lcarlini" class="nav-cta" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="#expertise" data-i18n="nav.expertise">Expertise</a>
+        <a href="#impact" data-i18n="nav.impact">Impact</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#stack" data-i18n="nav.stack">Stack</a>
+        <a href="#education" data-i18n="nav.education">Education</a>
+        <a href="#certs" data-i18n="nav.certs">Certs</a>
+        <a href="#principles" data-i18n="nav.principles">Principles</a>
+        <a href="https://github.com/lcarlini" class="nav-cta" target="_blank" rel="noopener" data-i18n="nav.github">GitHub ↗</a>
+        <div class="lang-switch" role="group" aria-label="Language" data-i18n-aria="lang.label">
+          <button type="button" data-lang="en" class="active" aria-pressed="true">EN</button>
+          <button type="button" data-lang="pt" aria-pressed="false">PT</button>
+          <button type="button" data-lang="es" aria-pressed="false">ES</button>
+        </div>
       </div>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
     </div>
@@ -373,10 +405,10 @@
 
   <header class="hero" id="top">
     <div class="container">
-      <span class="badge reveal"><span class="dot"></span> Available for high-impact engineering work</span>
-      <h1 class="reveal">Software that <span class="gradient-text">scales, endures,<br>and delivers</span>.</h1>
+      <span class="badge reveal"><span class="dot"></span> <span data-i18n="hero.badge">Available for high-impact engineering work</span></span>
+      <h1 class="reveal" data-i18n-html="hero.titleHtml">Software that <span class="gradient-text">scales, endures,<br>and delivers</span>.</h1>
       <div class="role reveal"><span id="typed"></span><span class="cursor">▋</span></div>
-      <p class="lead reveal">
+      <p class="lead reveal" data-i18n="hero.lead">
         15+ years architecting distributed, cloud-native systems on .NET, Azure, and AWS —
         optimizing data-intensive queries and turning complex, ambiguous problems into reliable
         platforms that move the business forward. Experienced on internal product initiatives and
@@ -385,13 +417,13 @@
       <div class="hero-actions reveal">
         <a href="https://github.com/lcarlini" class="btn btn-primary" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.79 2.73 1.27 3.4.97.1-.76.4-1.27.73-1.56-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
-          View GitHub
+          <span data-i18n="hero.github">View GitHub</span>
         </a>
-        <a href="#contact" class="btn btn-ghost">Get in touch →</a>
+        <a href="#contact" class="btn btn-ghost"><span data-i18n="hero.contact">Get in touch →</span></a>
       </div>
       <div class="scroll-hint reveal">
         <div class="mouse"><i></i></div>
-        SCROLL
+        <span data-i18n="hero.scroll">SCROLL</span>
       </div>
     </div>
   </header>
@@ -405,17 +437,17 @@
   <section id="expertise">
     <div class="container">
       <div class="section-head reveal">
-        <span class="section-tag">What I do</span>
-        <h2>Engineering that goes deep where it matters</h2>
-        <p>I focus on the hard, high-leverage parts of software: architecture, scalability, reliability, query optimization, and the systems thinking that keeps them healthy over time.</p>
+        <span class="section-tag" data-i18n="expertise.tag">What I do</span>
+        <h2 data-i18n="expertise.title">Engineering that goes deep where it matters</h2>
+        <p data-i18n="expertise.lead">I focus on the hard, high-leverage parts of software: architecture, scalability, reliability, query optimization, and the systems thinking that keeps them healthy over time.</p>
       </div>
       <div class="cards-grid">
-        <div class="card reveal" data-tilt><div class="icon">☁️</div><h3>Cloud &amp; Distributed Architecture</h3><p>Event-driven, microservice, and serverless systems on Azure and AWS — designed for scale, resilience, and clean domain boundaries.</p></div>
-        <div class="card reveal" data-tilt><div class="icon">⚙️</div><h3>Backend &amp; Platform Engineering</h3><p>High-performance APIs and services in .NET / C#, with clean architecture, DDD, and CQRS underpinning maintainable, testable codebases.</p></div>
-        <div class="card reveal" data-tilt><div class="icon">🗄️</div><h3>Data &amp; Query Optimization</h3><p>High-volume queries and pipelines processing millions of records — profiled and tuned for efficient access, real-time filtering, consistency, and performance.</p></div>
-        <div class="card reveal" data-tilt><div class="icon">🔁</div><h3>Legacy Modernization</h3><p>Migrating monoliths to cloud-native platforms without breaking the business — improving scalability, cost, and developer velocity.</p></div>
-        <div class="card reveal" data-tilt><div class="icon">🤖</div><h3>AI-Assisted Delivery</h3><p>Applying AI within products and across engineering workflows to automate work, accelerate delivery, and raise developer productivity.</p></div>
-        <div class="card reveal" data-tilt><div class="icon">🧭</div><h3>Technical Leadership</h3><p>Leading international teams in English across cultures — architecture reviews, mentoring, and standards that align engineering with business outcomes on internal and client work.</p></div>
+        <div class="card reveal" data-tilt><div class="icon">☁️</div><h3 data-i18n="expertise.c1.t">Cloud &amp; Distributed Architecture</h3><p data-i18n="expertise.c1.p">Event-driven, microservice, and serverless systems on Azure and AWS — designed for scale, resilience, and clean domain boundaries.</p></div>
+        <div class="card reveal" data-tilt><div class="icon">⚙️</div><h3 data-i18n="expertise.c2.t">Backend &amp; Platform Engineering</h3><p data-i18n="expertise.c2.p">High-performance APIs and services in .NET / C#, with clean architecture, DDD, and CQRS underpinning maintainable, testable codebases.</p></div>
+        <div class="card reveal" data-tilt><div class="icon">🗄️</div><h3 data-i18n="expertise.c3.t">Data &amp; Query Optimization</h3><p data-i18n="expertise.c3.p">High-volume queries and pipelines processing millions of records — profiled and tuned for efficient access, real-time filtering, consistency, and performance.</p></div>
+        <div class="card reveal" data-tilt><div class="icon">🔁</div><h3 data-i18n="expertise.c4.t">Legacy Modernization</h3><p data-i18n="expertise.c4.p">Migrating monoliths to cloud-native platforms without breaking the business — improving scalability, cost, and developer velocity.</p></div>
+        <div class="card reveal" data-tilt><div class="icon">🤖</div><h3 data-i18n="expertise.c5.t">AI-Assisted Delivery</h3><p data-i18n="expertise.c5.p">Applying AI within products and across engineering workflows to automate work, accelerate delivery, and raise developer productivity.</p></div>
+        <div class="card reveal" data-tilt><div class="icon">🧭</div><h3 data-i18n="expertise.c6.t">Technical Leadership</h3><p data-i18n="expertise.c6.p">Leading international teams in English across cultures — architecture reviews, mentoring, and standards that align engineering with business outcomes on internal and client work.</p></div>
       </div>
     </div>
   </section>
@@ -423,28 +455,28 @@
   <section id="impact">
     <div class="container">
       <div class="section-head reveal">
-        <span class="section-tag">Measurable results</span>
-        <h2>Impact, not just output</h2>
-        <p>Engineering earns its value in outcomes. I've delivered for Brazilian, Canadian, and U.S. companies — including on-site work in the Netherlands — collaborating daily in English with international teams across different cultures, on both client and internal product initiatives.</p>
+        <span class="section-tag" data-i18n="impact.tag">Measurable results</span>
+        <h2 data-i18n="impact.title">Impact, not just output</h2>
+        <p data-i18n="impact.lead">Engineering earns its value in outcomes. I've delivered for Brazilian, Canadian, and U.S. companies — including on-site work in the Netherlands — collaborating daily in English with international teams across different cultures, on both client and internal product initiatives.</p>
       </div>
       <div class="stats-grid">
-        <div class="stat reveal"><div class="num gradient-text" data-count="15" data-suffix="+">0</div><div class="label">Years shipping production software</div></div>
-        <div class="stat reveal"><div class="num gradient-text" data-count="8" data-prefix="$" data-suffix="M+">0</div><div class="label">Revenue driven via payment solutions</div></div>
-        <div class="stat reveal"><div class="num gradient-text" data-count="99.9" data-suffix="%">0</div><div class="label">Uptime on production systems</div></div>
-        <div class="stat reveal"><div class="num gradient-text" data-count="70" data-suffix="%">0</div><div class="label">Faster provisioning with IaC + CI/CD</div></div>
-        <div class="stat reveal"><div class="num gradient-text" data-count="60" data-suffix="%">0</div><div class="label">Less manual effort via AI automation</div></div>
+        <div class="stat reveal"><div class="num gradient-text" data-count="15" data-suffix="+">0</div><div class="label" data-i18n="impact.s1">Years shipping production software</div></div>
+        <div class="stat reveal"><div class="num gradient-text" data-count="8" data-prefix="$" data-suffix="M+">0</div><div class="label" data-i18n="impact.s2">Revenue driven via payment solutions</div></div>
+        <div class="stat reveal"><div class="num gradient-text" data-count="99.9" data-suffix="%">0</div><div class="label" data-i18n="impact.s3">Uptime on production systems</div></div>
+        <div class="stat reveal"><div class="num gradient-text" data-count="70" data-suffix="%">0</div><div class="label" data-i18n="impact.s4">Faster provisioning with IaC + CI/CD</div></div>
+        <div class="stat reveal"><div class="num gradient-text" data-count="60" data-suffix="%">0</div><div class="label" data-i18n="impact.s5">Less manual effort via AI automation</div></div>
         <div class="stat reveal">
           <div class="num gradient-text" data-count="4" data-suffix="">0</div>
-          <div class="label">Markets</div>
+          <div class="label" data-i18n="impact.s6">Markets</div>
           <div class="markets">
-            <span class="market"><img src="https://flagcdn.com/br.svg" alt="" width="18" height="13" loading="lazy"> Brazil</span>
-            <span class="market"><img src="https://flagcdn.com/ca.svg" alt="" width="18" height="13" loading="lazy"> Canada</span>
-            <span class="market"><img src="https://flagcdn.com/us.svg" alt="" width="18" height="13" loading="lazy"> USA</span>
-            <span class="market"><img src="https://flagcdn.com/nl.svg" alt="" width="18" height="13" loading="lazy"> Netherlands <span class="note">(on-site)</span></span>
+            <span class="market"><img src="https://flagcdn.com/br.svg" alt="" width="18" height="13" loading="lazy"> <span data-i18n="impact.market.br">Brazil</span></span>
+            <span class="market"><img src="https://flagcdn.com/ca.svg" alt="" width="18" height="13" loading="lazy"> <span data-i18n="impact.market.ca">Canada</span></span>
+            <span class="market"><img src="https://flagcdn.com/us.svg" alt="" width="18" height="13" loading="lazy"> <span data-i18n="impact.market.us">USA</span></span>
+            <span class="market"><img src="https://flagcdn.com/nl.svg" alt="" width="18" height="13" loading="lazy"> <span data-i18n="impact.market.nl">Netherlands</span> <span class="note" data-i18n="impact.nlNote">(on-site)</span></span>
           </div>
         </div>
-        <div class="stat reveal"><div class="num gradient-text">Millions</div><div class="label">Records in real-time data pipelines</div></div>
-        <div class="stat reveal"><div class="num gradient-text">∞</div><div class="label">Curiosity for the next hard problem</div></div>
+        <div class="stat reveal"><div class="num gradient-text">Millions</div><div class="label" data-i18n="impact.s7">Records in real-time data pipelines</div></div>
+        <div class="stat reveal"><div class="num gradient-text">∞</div><div class="label" data-i18n="impact.s8">Curiosity for the next hard problem</div></div>
       </div>
     </div>
   </section>
@@ -452,33 +484,33 @@
   <section id="projects">
     <div class="container">
       <div class="section-head reveal">
-        <span class="section-tag">Selected work</span>
-        <h2>Projects that moved the needle</h2>
-        <p>From cloud automation and loyalty platforms to airline systems and thesis research — challenges, how they were built, and the outcomes that followed.</p>
+        <span class="section-tag" data-i18n="projects.tag">Selected work</span>
+        <h2 data-i18n="projects.title">Projects that moved the needle</h2>
+        <p data-i18n="projects.lead">From cloud automation and loyalty platforms to airline systems and thesis research — challenges, how they were built, and the outcomes that followed.</p>
       </div>
       <div class="projects-list">
 
         <article class="project reveal">
           <div class="project-head">
-            <h3>Portfolio Management Platform</h3>
+            <h3 data-i18n="projects.p01.title">Portfolio Management Platform</h3>
           </div>
           <div class="project-blocks">
             <div class="project-block">
-              <h4>Overview &amp; Challenge</h4>
-              <p>A portfolio management and control platform for investment operations needed a new version: the legacy system blocked new functionality, carried unresolved issues, and could not keep pace with modern operational workflows.</p>
+              <h4 data-i18n="projects.overview">Overview &amp; Challenge</h4>
+              <p data-i18n="projects.p01.overview">A portfolio management and control platform for investment operations needed a new version: the legacy system blocked new functionality, carried unresolved issues, and could not keep pace with modern operational workflows.</p>
             </div>
             <div class="project-block">
-              <h4>Development Process</h4>
-              <ul>
+              <h4 data-i18n="projects.process">Development Process</h4>
+              <div data-i18n-html="projects.p01.process"><ul>
                 <li>Led implementation of the new platform on modern .NET, fixing legacy limitations and unlocking capabilities that were previously impossible.</li>
                 <li>Designed web applications and Azure Functions for scalable workflows, background processing, and operational automation.</li>
                 <li>Built SQL Server structures and processing routines focused on data quality, consistency, and performance for analytics and semantic modeling.</li>
                 <li>Drove architecture discussions with the Product Owner and used AI-assisted workflows to accelerate delivery across the lifecycle.</li>
-              </ul>
+              </ul></div>
             </div>
             <div class="project-block">
-              <h4>Achievements &amp; Impact</h4>
-              <p>Delivered a modern foundation for investment operations with new functionality, stronger data pipelines for downstream analytics, and faster iteration through architecture alignment and AI-assisted engineering.</p>
+              <h4 data-i18n="projects.impact">Achievements &amp; Impact</h4>
+              <p data-i18n="projects.p01.impact">Delivered a modern foundation for investment operations with new functionality, stronger data pipelines for downstream analytics, and faster iteration through architecture alignment and AI-assisted engineering.</p>
             </div>
           </div>
           <div class="chips"><span class="chip">.NET</span><span class="chip">Azure Functions</span><span class="chip">SQL Server</span><span class="chip">Entity Framework</span><span class="chip">CI/CD</span></div>
@@ -486,25 +518,25 @@
 
         <article class="project reveal">
           <div class="project-head">
-            <h3>Real-time Matchback System</h3>
+            <h3 data-i18n="projects.p02.title">Real-time Matchback System</h3>
           </div>
           <div class="project-blocks">
             <div class="project-block">
-              <h4>Overview &amp; Challenge</h4>
-              <p>An automated direct-mail marketing platform needed integrations and a data architecture that could handle millions of records — with accurate, real-time visibility into campaign growth, revenue, and cost.</p>
+              <h4 data-i18n="projects.overview">Overview &amp; Challenge</h4>
+              <p data-i18n="projects.p02.overview">An automated direct-mail marketing platform needed integrations and a data architecture that could handle millions of records — with accurate, real-time visibility into campaign growth, revenue, and cost.</p>
             </div>
             <div class="project-block">
-              <h4>Development Process</h4>
-              <ul>
+              <h4 data-i18n="projects.process">Development Process</h4>
+              <div data-i18n-html="projects.p02.process"><ul>
                 <li>Led integrations with Klaviyo, Shopify, and ServiceTitan to support growth and new client acquisition.</li>
                 <li>Designed a scalable pipeline for ingestion, sanitization, and high-performance dynamic filtering.</li>
                 <li>Built a real-time Matchback system so users could track marketing performance with actionable metrics.</li>
                 <li>Led architecture reviews, PoCs, risk discussions, and hiring support alongside strategic decision-making.</li>
-              </ul>
+              </ul></div>
             </div>
             <div class="project-block">
-              <h4>Achievements &amp; Impact</h4>
-              <p>The Matchback system helped drive over $8M in new customer subscriptions, attracted investors, and became a core growth engine for the product.</p>
+              <h4 data-i18n="projects.impact">Achievements &amp; Impact</h4>
+              <p data-i18n="projects.p02.impact">The Matchback system helped drive over $8M in new customer subscriptions, attracted investors, and became a core growth engine for the product.</p>
             </div>
           </div>
           <div class="chips"><span class="chip">.NET Core</span><span class="chip">Azure</span><span class="chip">Microservices</span><span class="chip">Service Bus</span><span class="chip">SQL Server</span></div>
@@ -512,24 +544,24 @@
 
         <article class="project reveal">
           <div class="project-head">
-            <h3>Cloud Migration &amp; AI Process Automation</h3>
+            <h3 data-i18n="projects.p03.title">Cloud Migration &amp; AI Process Automation</h3>
           </div>
           <div class="project-blocks">
             <div class="project-block">
-              <h4>Overview &amp; Challenge</h4>
-              <p>A monolithic platform needed to move to Azure with a rebuilt admin experience, while internal processes still depended on heavy manual work across photos, invoices, translations, and product feedback.</p>
+              <h4 data-i18n="projects.overview">Overview &amp; Challenge</h4>
+              <p data-i18n="projects.p03.overview">A monolithic platform needed to move to Azure with a rebuilt admin experience, while internal processes still depended on heavy manual work across photos, invoices, translations, and product feedback.</p>
             </div>
             <div class="project-block">
-              <h4>Development Process</h4>
-              <ul>
+              <h4 data-i18n="projects.process">Development Process</h4>
+              <div data-i18n-html="projects.p03.process"><ul>
                 <li>Helped migrate the monolith to Azure and rebuild the admin system for better scalability and maintainability.</li>
                 <li>Led a newly formed team after acquisitions — code reviews, onboarding, roadmap, and technical decisions.</li>
                 <li>Applied AI to automate face blurring, invoice extraction, translation, and text analysis inside product workflows.</li>
-              </ul>
+              </ul></div>
             </div>
             <div class="project-block">
-              <h4>Achievements &amp; Impact</h4>
-              <p>Improved operational efficiency and reduced cloud/ops cost through modernization, while AI automation cut manual effort and generated measurable financial gains.</p>
+              <h4 data-i18n="projects.impact">Achievements &amp; Impact</h4>
+              <p data-i18n="projects.p03.impact">Improved operational efficiency and reduced cloud/ops cost through modernization, while AI automation cut manual effort and generated measurable financial gains.</p>
             </div>
           </div>
           <div class="chips"><span class="chip">.NET Core</span><span class="chip">Azure</span><span class="chip">Terraform</span><span class="chip">Cosmos DB</span><span class="chip">AI Engineering</span></div>
@@ -537,24 +569,24 @@
 
         <article class="project reveal">
           <div class="project-head">
-            <h3>Cloud Automation Solutions</h3>
+            <h3 data-i18n="projects.p04.title">Cloud Automation Solutions</h3>
           </div>
           <div class="project-blocks">
             <div class="project-block">
-              <h4>Overview &amp; Challenge</h4>
-              <p>A client needed to move from GoCD to Azure DevOps and strengthen automation for server and application deployments across a multi-cloud environment.</p>
+              <h4 data-i18n="projects.overview">Overview &amp; Challenge</h4>
+              <p data-i18n="projects.p04.overview">A client needed to move from GoCD to Azure DevOps and strengthen automation for server and application deployments across a multi-cloud environment.</p>
             </div>
             <div class="project-block">
-              <h4>Development Process</h4>
-              <ul>
+              <h4 data-i18n="projects.process">Development Process</h4>
+              <div data-i18n-html="projects.p04.process"><ul>
                 <li>Migrated applications from GoCD to Azure DevOps.</li>
                 <li>Implemented AWS Lambda functions to dynamically adjust EC2 instance sizes and disk volumes during deployment.</li>
                 <li>Built PowerShell automation for servers and apps, integrated the Azure DevOps API, and used ARM Templates for Azure Apps.</li>
-              </ul>
+              </ul></div>
             </div>
             <div class="project-block">
-              <h4>Achievements &amp; Impact</h4>
-              <p>Cut significant time from the development cycle, improved deployment stability, and freed other teams to focus on application development.</p>
+              <h4 data-i18n="projects.impact">Achievements &amp; Impact</h4>
+              <p data-i18n="projects.p04.impact">Cut significant time from the development cycle, improved deployment stability, and freed other teams to focus on application development.</p>
             </div>
           </div>
           <div class="chips"><span class="chip">Microsoft Azure</span><span class="chip">AWS</span><span class="chip">PowerShell</span><span class="chip">Azure DevOps</span></div>
@@ -562,24 +594,24 @@
 
         <article class="project reveal">
           <div class="project-head">
-            <h3>Improved Cloud Application Monitoring System</h3>
+            <h3 data-i18n="projects.p05.title">Improved Cloud Application Monitoring System</h3>
           </div>
           <div class="project-blocks">
             <div class="project-block">
-              <h4>Overview &amp; Challenge</h4>
-              <p>A customer needed stronger monitoring for cloud applications — Azure Functions health, Dead Letter Queues, and high CPU on SQL Servers — with alerts routed through SumoLogic to email and Microsoft Teams.</p>
+              <h4 data-i18n="projects.overview">Overview &amp; Challenge</h4>
+              <p data-i18n="projects.p05.overview">A customer needed stronger monitoring for cloud applications — Azure Functions health, Dead Letter Queues, and high CPU on SQL Servers — with alerts routed through SumoLogic to email and Microsoft Teams.</p>
             </div>
             <div class="project-block">
-              <h4>Development Process</h4>
-              <ul>
+              <h4 data-i18n="projects.process">Development Process</h4>
+              <div data-i18n-html="projects.p05.process"><ul>
                 <li>Implemented Azure Alerts for proactive service monitoring.</li>
                 <li>Built .NET Core NuGet packages to automate SumoLogic alert creation during deployment, with custom monitoring queries shipped alongside apps.</li>
                 <li>Created an Azure Function to route triggered alerts to the right team via a SumoLogic connector for logging and notifications.</li>
-              </ul>
+              </ul></div>
             </div>
             <div class="project-block">
-              <h4>Achievements &amp; Impact</h4>
-              <p>Saved time in the delivery cycle, improved deployment stability, and let teams focus on their apps while still producing root-cause-oriented reports and metrics.</p>
+              <h4 data-i18n="projects.impact">Achievements &amp; Impact</h4>
+              <p data-i18n="projects.p05.impact">Saved time in the delivery cycle, improved deployment stability, and let teams focus on their apps while still producing root-cause-oriented reports and metrics.</p>
             </div>
           </div>
           <div class="chips"><span class="chip">Microsoft Azure</span><span class="chip">.NET Core</span><span class="chip">SumoLogic</span><span class="chip">SQL</span></div>
@@ -587,20 +619,20 @@
 
         <article class="project reveal">
           <div class="project-head">
-            <h3>Refactoring using Logic Apps</h3>
+            <h3 data-i18n="projects.p06.title">Refactoring using Logic Apps</h3>
           </div>
           <div class="project-blocks">
             <div class="project-block">
-              <h4>Overview &amp; Challenge</h4>
-              <p>Third-party Informatica Data Integration jobs carried recurring license cost. The goal was to remake those integrations with Logic Apps without losing reliability.</p>
+              <h4 data-i18n="projects.overview">Overview &amp; Challenge</h4>
+              <p data-i18n="projects.p06.overview">Third-party Informatica Data Integration jobs carried recurring license cost. The goal was to remake those integrations with Logic Apps without losing reliability.</p>
             </div>
             <div class="project-block">
-              <h4>Development Process</h4>
-              <p>Rebuilt Informatica Data Integration jobs as Logic Apps workflows, preserving integration behavior while simplifying operations and ownership.</p>
+              <h4 data-i18n="projects.process">Development Process</h4>
+              <div data-i18n-html="projects.p06.process"><p>Rebuilt Informatica Data Integration jobs as Logic Apps workflows, preserving integration behavior while simplifying operations and ownership.</p></div>
             </div>
             <div class="project-block">
-              <h4>Achievements &amp; Impact</h4>
-              <p>Reduced license cost and saved development time on future integration work.</p>
+              <h4 data-i18n="projects.impact">Achievements &amp; Impact</h4>
+              <p data-i18n="projects.p06.impact">Reduced license cost and saved development time on future integration work.</p>
             </div>
           </div>
           <div class="chips"><span class="chip">Logic Apps</span><span class="chip">Azure</span><span class="chip">SQL</span><span class="chip">.NET</span></div>
@@ -608,25 +640,25 @@
 
         <article class="project reveal">
           <div class="project-head">
-            <h3>Loyalty Banking Account</h3>
+            <h3 data-i18n="projects.p07.title">Loyalty Banking Account</h3>
           </div>
           <div class="project-blocks">
             <div class="project-block">
-              <h4>Overview &amp; Challenge</h4>
-              <p>The platform managed participant registration and current accounts (credit, debit, transfer, refund, balance, statement, and integrations). Growth exposed performance and scalability limits, heavy business logic in procedures, and a fragile manual process for splitting large files — often risking SLA breaches.</p>
+              <h4 data-i18n="projects.overview">Overview &amp; Challenge</h4>
+              <p data-i18n="projects.p07.overview">The platform managed participant registration and current accounts (credit, debit, transfer, refund, balance, statement, and integrations). Growth exposed performance and scalability limits, heavy business logic in procedures, and a fragile manual process for splitting large files — often risking SLA breaches.</p>
             </div>
             <div class="project-block">
-              <h4>Development Process</h4>
-              <ul>
+              <h4 data-i18n="projects.process">Development Process</h4>
+              <div data-i18n-html="projects.p07.process"><ul>
                 <li>Replaced FTP uploads with Azure-based batch processing for better scalability.</li>
                 <li>Built an API integrated with ServiceNow for client interaction, full file tracking, and pre-validation of invalid files.</li>
                 <li>Treated each file line as a Service Bus message so Azure Functions could scale processing; completion events notified dependent systems.</li>
                 <li>Added scheduling for multi-million-record files, including overnight runs for long workloads.</li>
-              </ul>
+              </ul></div>
             </div>
             <div class="project-block">
-              <h4>Achievements &amp; Impact</h4>
-              <p>Improved UX, resolved architectural issues, achieved true large-file scalability, and contributed to a 27% increase in company revenue after the improvements.</p>
+              <h4 data-i18n="projects.impact">Achievements &amp; Impact</h4>
+              <p data-i18n="projects.p07.impact">Improved UX, resolved architectural issues, achieved true large-file scalability, and contributed to a 27% increase in company revenue after the improvements.</p>
             </div>
           </div>
           <div class="chips"><span class="chip">SQL</span><span class="chip">.NET</span><span class="chip">Azure Functions</span><span class="chip">Service Bus</span></div>
@@ -634,20 +666,20 @@
 
         <article class="project reveal">
           <div class="project-head">
-            <h3>Order Authorization API</h3>
+            <h3 data-i18n="projects.p08.title">Order Authorization API</h3>
           </div>
           <div class="project-blocks">
             <div class="project-block">
-              <h4>Overview &amp; Challenge</h4>
-              <p>Real-time order authorization checked balance, partner stock, and third-party credit-card APIs synchronously — causing performance and stability failures under peak sales such as Black Friday.</p>
+              <h4 data-i18n="projects.overview">Overview &amp; Challenge</h4>
+              <p data-i18n="projects.p08.overview">Real-time order authorization checked balance, partner stock, and third-party credit-card APIs synchronously — causing performance and stability failures under peak sales such as Black Friday.</p>
             </div>
             <div class="project-block">
-              <h4>Development Process</h4>
-              <p>Refactored order authorization, transfer, and refund flows to messaging with scaling and stronger fault control, keeping transient issues off the client path while keeping database transactions consistent.</p>
+              <h4 data-i18n="projects.process">Development Process</h4>
+              <div data-i18n-html="projects.p08.process"><p>Refactored order authorization, transfer, and refund flows to messaging with scaling and stronger fault control, keeping transient issues off the client path while keeping database transactions consistent.</p></div>
             </div>
             <div class="project-block">
-              <h4>Achievements &amp; Impact</h4>
-              <p>Improved user experience, fixed architectural bottlenecks, and made the process scalable under high load.</p>
+              <h4 data-i18n="projects.impact">Achievements &amp; Impact</h4>
+              <p data-i18n="projects.p08.impact">Improved user experience, fixed architectural bottlenecks, and made the process scalable under high load.</p>
             </div>
           </div>
           <div class="chips"><span class="chip">Microsoft Azure</span><span class="chip">SQL</span><span class="chip">Messaging</span><span class="chip">.NET</span></div>
@@ -655,20 +687,20 @@
 
         <article class="project reveal">
           <div class="project-head">
-            <h3>Like+ Card</h3>
+            <h3 data-i18n="projects.p09.title">Like+ Card</h3>
           </div>
           <div class="project-blocks">
             <div class="project-block">
-              <h4>Overview &amp; Challenge</h4>
-              <p>Like+ Card is a physical card that lets participants convert loyalty points into cash usable at partner establishments — extending traditional loyalty with more flexible, tangible benefits.</p>
+              <h4 data-i18n="projects.overview">Overview &amp; Challenge</h4>
+              <p data-i18n="projects.p09.overview">Like+ Card is a physical card that lets participants convert loyalty points into cash usable at partner establishments — extending traditional loyalty with more flexible, tangible benefits.</p>
             </div>
             <div class="project-block">
-              <h4>Development Process</h4>
-              <p>Built the platform with Angular and microservices: card application, activation/unlock, top-up, loss/theft reporting, and real-time tracking of balance and request status.</p>
+              <h4 data-i18n="projects.process">Development Process</h4>
+              <div data-i18n-html="projects.p09.process"><p>Built the platform with Angular and microservices: card application, activation/unlock, top-up, loss/theft reporting, and real-time tracking of balance and request status.</p></div>
             </div>
             <div class="project-block">
-              <h4>Achievements &amp; Impact</h4>
-              <p>Launched a successful new product line, increased revenue, enabled multiple third-party integrations, and raised the bar for loyalty program offerings.</p>
+              <h4 data-i18n="projects.impact">Achievements &amp; Impact</h4>
+              <p data-i18n="projects.p09.impact">Launched a successful new product line, increased revenue, enabled multiple third-party integrations, and raised the bar for loyalty program offerings.</p>
             </div>
           </div>
           <div class="chips"><span class="chip">Angular</span><span class="chip">Microservices</span><span class="chip">Microsoft Azure</span><span class="chip">SQL</span></div>
@@ -676,20 +708,20 @@
 
         <article class="project reveal">
           <div class="project-head">
-            <h3>New Cache System</h3>
+            <h3 data-i18n="projects.p10.title">New Cache System</h3>
           </div>
           <div class="project-blocks">
             <div class="project-block">
-              <h4>Overview &amp; Challenge</h4>
-              <p>Balance and statement calculations were heavy enough to hurt platform responsiveness, so a dedicated cache layer was required.</p>
+              <h4 data-i18n="projects.overview">Overview &amp; Challenge</h4>
+              <p data-i18n="projects.p10.overview">Balance and statement calculations were heavy enough to hurt platform responsiveness, so a dedicated cache layer was required.</p>
             </div>
             <div class="project-block">
-              <h4>Development Process</h4>
-              <p>Implemented a Redis cache for balance and statement with messaging control that updates the cache only when the database changes.</p>
+              <h4 data-i18n="projects.process">Development Process</h4>
+              <div data-i18n-html="projects.p10.process"><p>Implemented a Redis cache for balance and statement with messaging control that updates the cache only when the database changes.</p></div>
             </div>
             <div class="project-block">
-              <h4>Achievements &amp; Impact</h4>
-              <p>Improved user experience and overall system performance for the most frequent account queries.</p>
+              <h4 data-i18n="projects.impact">Achievements &amp; Impact</h4>
+              <p data-i18n="projects.p10.impact">Improved user experience and overall system performance for the most frequent account queries.</p>
             </div>
           </div>
           <div class="chips"><span class="chip">Redis</span><span class="chip">Microsoft Azure</span><span class="chip">SQL</span><span class="chip">Messaging</span></div>
@@ -697,20 +729,20 @@
 
         <article class="project reveal">
           <div class="project-head">
-            <h3>Point Expiration System</h3>
+            <h3 data-i18n="projects.p11.title">Point Expiration System</h3>
           </div>
           <div class="project-blocks">
             <div class="project-block">
-              <h4>Overview &amp; Challenge</h4>
-              <p>The point expiration flow had transaction issues that caused financial loss. Participants can use balance until 23:59 on the last valid day, which made correct cutoff handling critical.</p>
+              <h4 data-i18n="projects.overview">Overview &amp; Challenge</h4>
+              <p data-i18n="projects.p11.overview">The point expiration flow had transaction issues that caused financial loss. Participants can use balance until 23:59 on the last valid day, which made correct cutoff handling critical.</p>
             </div>
             <div class="project-block">
-              <h4>Development Process</h4>
-              <p>Introduced a Redis lock one day before expiration to force additional validation. After expiration is confirmed, the lock is removed and expiring transactions become Service Bus messages processed by an Azure Function for scalable execution.</p>
+              <h4 data-i18n="projects.process">Development Process</h4>
+              <div data-i18n-html="projects.p11.process"><p>Introduced a Redis lock one day before expiration to force additional validation. After expiration is confirmed, the lock is removed and expiring transactions become Service Bus messages processed by an Azure Function for scalable execution.</p></div>
             </div>
             <div class="project-block">
-              <h4>Achievements &amp; Impact</h4>
-              <p>Protected revenue that was previously being lost and improved the reliability and performance of expiration processing.</p>
+              <h4 data-i18n="projects.impact">Achievements &amp; Impact</h4>
+              <p data-i18n="projects.p11.impact">Protected revenue that was previously being lost and improved the reliability and performance of expiration processing.</p>
             </div>
           </div>
           <div class="chips"><span class="chip">Redis</span><span class="chip">Azure Functions</span><span class="chip">Service Bus</span><span class="chip">SQL</span><span class="chip">.NET</span></div>
@@ -718,20 +750,20 @@
 
         <article class="project reveal">
           <div class="project-head">
-            <h3>Monitoring API</h3>
+            <h3 data-i18n="projects.p12.title">Monitoring API</h3>
           </div>
           <div class="project-blocks">
             <div class="project-block">
-              <h4>Overview &amp; Challenge</h4>
-              <p>Operations needed continuous checks on whether APIs were online and protected, and whether Dead Letter queues held messages — with findings sent to a 24/7 monitoring board.</p>
+              <h4 data-i18n="projects.overview">Overview &amp; Challenge</h4>
+              <p data-i18n="projects.p12.overview">Operations needed continuous checks on whether APIs were online and protected, and whether Dead Letter queues held messages — with findings sent to a 24/7 monitoring board.</p>
             </div>
             <div class="project-block">
-              <h4>Development Process</h4>
-              <p>Created a .NET Core API to probe services and push status data to the monitoring board.</p>
+              <h4 data-i18n="projects.process">Development Process</h4>
+              <div data-i18n-html="projects.p12.process"><p>Created a .NET Core API to probe services and push status data to the monitoring board.</p></div>
             </div>
             <div class="project-block">
-              <h4>Achievements &amp; Impact</h4>
-              <p>Enabled assertive operations: product teams and support could detect and correct flaws faster.</p>
+              <h4 data-i18n="projects.impact">Achievements &amp; Impact</h4>
+              <p data-i18n="projects.p12.impact">Enabled assertive operations: product teams and support could detect and correct flaws faster.</p>
             </div>
           </div>
           <div class="chips"><span class="chip">.NET Core</span><span class="chip">SQL</span><span class="chip">Observability</span></div>
@@ -739,20 +771,20 @@
 
         <article class="project reveal">
           <div class="project-head">
-            <h3>Check-in Offline</h3>
+            <h3 data-i18n="projects.p13.title">Check-in Offline</h3>
           </div>
           <div class="project-blocks">
             <div class="project-block">
-              <h4>Overview &amp; Challenge</h4>
-              <p>A Brazilian airline needed passenger check-in to continue when the online system was down for any reason.</p>
+              <h4 data-i18n="projects.overview">Overview &amp; Challenge</h4>
+              <p data-i18n="projects.p13.overview">A Brazilian airline needed passenger check-in to continue when the online system was down for any reason.</p>
             </div>
             <div class="project-block">
-              <h4>Development Process</h4>
-              <p>Built an ASP.NET MVC admin interface with the latest data available at failure time, replicating core Navitaire capabilities via APIs. When online service returned, the system resynchronized passengers and flights and surfaced conflicts that required human resolution.</p>
+              <h4 data-i18n="projects.process">Development Process</h4>
+              <div data-i18n-html="projects.p13.process"><p>Built an ASP.NET MVC admin interface with the latest data available at failure time, replicating core Navitaire capabilities via APIs. When online service returned, the system resynchronized passengers and flights and surfaced conflicts that required human resolution.</p></div>
             </div>
             <div class="project-block">
-              <h4>Achievements &amp; Impact</h4>
-              <p>Rolled out across Brazilian airports, reducing check-in time during outages and minimizing complications from fully manual procedures.</p>
+              <h4 data-i18n="projects.impact">Achievements &amp; Impact</h4>
+              <p data-i18n="projects.p13.impact">Rolled out across Brazilian airports, reducing check-in time during outages and minimizing complications from fully manual procedures.</p>
             </div>
           </div>
           <div class="chips"><span class="chip">ASP.NET MVC</span><span class="chip">SQL</span><span class="chip">.NET</span><span class="chip">APIs</span></div>
@@ -760,20 +792,20 @@
 
         <article class="project reveal">
           <div class="project-head">
-            <h3>IXBG (Excess Baggage)</h3>
+            <h3 data-i18n="projects.p14.title">IXBG (Excess Baggage)</h3>
           </div>
           <div class="project-blocks">
             <div class="project-block">
-              <h4>Overview &amp; Challenge</h4>
-              <p>Airport regulation changes required a system to calculate and charge excess baggage on the boarding pass before departure.</p>
+              <h4 data-i18n="projects.overview">Overview &amp; Challenge</h4>
+              <p data-i18n="projects.p14.overview">Airport regulation changes required a system to calculate and charge excess baggage on the boarding pass before departure.</p>
             </div>
             <div class="project-block">
-              <h4>Development Process</h4>
-              <p>Integrated IXBG with existing airport systems while enforcing the new taxation rules, keeping the flow accurate and usable for frontline staff.</p>
+              <h4 data-i18n="projects.process">Development Process</h4>
+              <div data-i18n-html="projects.p14.process"><p>Integrated IXBG with existing airport systems while enforcing the new taxation rules, keeping the flow accurate and usable for frontline staff.</p></div>
             </div>
             <div class="project-block">
-              <h4>Achievements &amp; Impact</h4>
-              <p>Brought operations into compliance with the new regulations and increased revenue through clearer, more efficient excess-baggage collection.</p>
+              <h4 data-i18n="projects.impact">Achievements &amp; Impact</h4>
+              <p data-i18n="projects.p14.impact">Brought operations into compliance with the new regulations and increased revenue through clearer, more efficient excess-baggage collection.</p>
             </div>
           </div>
           <div class="chips"><span class="chip">SQL</span><span class="chip">.NET</span></div>
@@ -781,20 +813,20 @@
 
         <article class="project reveal">
           <div class="project-head">
-            <h3>Signal</h3>
+            <h3 data-i18n="projects.p15.title">Signal</h3>
           </div>
           <div class="project-blocks">
             <div class="project-block">
-              <h4>Overview &amp; Challenge</h4>
-              <p>Travel agencies were canceling reservations close to flight dates. Signal was built to apply contractual extra charges that discourage late cancellations.</p>
+              <h4 data-i18n="projects.overview">Overview &amp; Challenge</h4>
+              <p data-i18n="projects.p15.overview">Travel agencies were canceling reservations close to flight dates. Signal was built to apply contractual extra charges that discourage late cancellations.</p>
             </div>
             <div class="project-block">
-              <h4>Development Process</h4>
-              <p>Implemented a service that identifies canceled flights and, according to contract rules, generates invoices for the responsible travel agencies.</p>
+              <h4 data-i18n="projects.process">Development Process</h4>
+              <div data-i18n-html="projects.p15.process"><p>Implemented a service that identifies canceled flights and, according to contract rules, generates invoices for the responsible travel agencies.</p></div>
             </div>
             <div class="project-block">
-              <h4>Achievements &amp; Impact</h4>
-              <p>Recovered revenue that was previously lost to last-minute cancellations.</p>
+              <h4 data-i18n="projects.impact">Achievements &amp; Impact</h4>
+              <p data-i18n="projects.p15.impact">Recovered revenue that was previously lost to last-minute cancellations.</p>
             </div>
           </div>
           <div class="chips"><span class="chip">SQL</span><span class="chip">.NET</span></div>
@@ -802,20 +834,20 @@
 
         <article class="project reveal">
           <div class="project-head">
-            <h3>Travel Agency Registration</h3>
+            <h3 data-i18n="projects.p16.title">Travel Agency Registration</h3>
           </div>
           <div class="project-blocks">
             <div class="project-block">
-              <h4>Overview &amp; Challenge</h4>
-              <p>Agency onboarding still relied on a Windows desktop application. The business needed a friendlier web experience for individual and batch registration.</p>
+              <h4 data-i18n="projects.overview">Overview &amp; Challenge</h4>
+              <p data-i18n="projects.p16.overview">Agency onboarding still relied on a Windows desktop application. The business needed a friendlier web experience for individual and batch registration.</p>
             </div>
             <div class="project-block">
-              <h4>Development Process</h4>
-              <p>Replaced the legacy Windows app with an ASP.NET MVC interface supporting manual and batch travel-agency registration.</p>
+              <h4 data-i18n="projects.process">Development Process</h4>
+              <div data-i18n-html="projects.p16.process"><p>Replaced the legacy Windows app with an ASP.NET MVC interface supporting manual and batch travel-agency registration.</p></div>
             </div>
             <div class="project-block">
-              <h4>Achievements &amp; Impact</h4>
-              <p>Improved user experience and resolved several architectural problems inherited from the desktop system.</p>
+              <h4 data-i18n="projects.impact">Achievements &amp; Impact</h4>
+              <p data-i18n="projects.p16.impact">Improved user experience and resolved several architectural problems inherited from the desktop system.</p>
             </div>
           </div>
           <div class="chips"><span class="chip">ASP.NET MVC</span><span class="chip">SQL</span><span class="chip">.NET</span></div>
@@ -823,20 +855,20 @@
 
         <article class="project reveal">
           <div class="project-head">
-            <h3>IPVA System</h3>
+            <h3 data-i18n="projects.p17.title">IPVA System</h3>
           </div>
           <div class="project-blocks">
             <div class="project-block">
-              <h4>Overview &amp; Challenge</h4>
-              <p>Central system for managing and tracking vehicles in São Paulo state, focused on IPVA (vehicle tax) control and monitoring.</p>
+              <h4 data-i18n="projects.overview">Overview &amp; Challenge</h4>
+              <p data-i18n="projects.p17.overview">Central system for managing and tracking vehicles in São Paulo state, focused on IPVA (vehicle tax) control and monitoring.</p>
             </div>
             <div class="project-block">
-              <h4>Development Process</h4>
-              <p>Built a multi-integration service connecting Receita Federal, Cadesp, and Detran via WCF, text-file processing, and APIs. Delivered a .NET web interface to present integration results and unify data for comprehensive reports.</p>
+              <h4 data-i18n="projects.process">Development Process</h4>
+              <div data-i18n-html="projects.p17.process"><p>Built a multi-integration service connecting Receita Federal, Cadesp, and Detran via WCF, text-file processing, and APIs. Delivered a .NET web interface to present integration results and unify data for comprehensive reports.</p></div>
             </div>
             <div class="project-block">
-              <h4>Achievements &amp; Impact</h4>
-              <p>Improved owner-address accuracy for tax charges and enabled valuable reports and metrics for administrative oversight of vehicle taxation.</p>
+              <h4 data-i18n="projects.impact">Achievements &amp; Impact</h4>
+              <p data-i18n="projects.p17.impact">Improved owner-address accuracy for tax charges and enabled valuable reports and metrics for administrative oversight of vehicle taxation.</p>
             </div>
           </div>
           <div class="chips"><span class="chip">SQL</span><span class="chip">.NET</span><span class="chip">WCF</span></div>
@@ -844,26 +876,31 @@
 
         <article class="project reveal">
           <div class="project-head">
-            <h3>SecureDocs: Mobile Document Control</h3>
-            <span class="when">Undergraduate Thesis · 2012</span>
+            <h3 data-i18n="projects.p18.title">SecureDocs: Mobile Document Control</h3>
+            <span class="when" data-i18n="projects.p18.when">Undergraduate Thesis · 2012</span>
           </div>
           <div class="project-blocks">
             <div class="project-block">
-              <h4>Overview &amp; Challenge</h4>
-              <p>For the undergraduate thesis, conceptualized and developed SecureDocs — an Android app that enables document exchange between employees and their company even outside the corporate network, while preserving high security and privacy standards.</p>
+              <h4 data-i18n="projects.overview">Overview &amp; Challenge</h4>
+              <p data-i18n="projects.p18.overview">For the undergraduate thesis, conceptualized and developed SecureDocs — an Android app that enables document exchange between employees and their company even outside the corporate network, while preserving high security and privacy standards.</p>
             </div>
             <div class="project-block">
-              <h4>Development Process</h4>
-              <p>Engineered as an Android client with a secure server connection and encrypted file transfer. The companion client/server side was built with .NET C# for a reliable end-to-end experience.</p>
+              <h4 data-i18n="projects.process">Development Process</h4>
+              <div data-i18n-html="projects.p18.process"><p>Engineered as an Android client with a secure server connection and encrypted file transfer. The companion client/server side was built with .NET C# for a reliable end-to-end experience.</p></div>
             </div>
             <div class="project-block">
-              <h4>Achievements &amp; Impact</h4>
-              <p>Presented as the Undergraduate Thesis project and received the highest possible score — validating the approach to secure corporate document control.</p>
+              <h4 data-i18n="projects.impact">Achievements &amp; Impact</h4>
+              <p data-i18n="projects.p18.impact">Presented as the Undergraduate Thesis project and received the highest possible score — validating the approach to secure corporate document control.</p>
             </div>
           </div>
           <div class="chips"><span class="chip">Android</span><span class="chip">.NET</span><span class="chip">SQL</span><span class="chip">Encryption</span></div>
         </article>
 
+      </div>
+      <div class="projects-more-wrap reveal">
+        <button type="button" class="btn btn-ghost" id="projectsToggle" aria-expanded="false">
+          <span data-i18n="projects.showMore">Show more projects</span>
+        </button>
       </div>
     </div>
   </section>
@@ -871,15 +908,15 @@
   <section id="stack">
     <div class="container">
       <div class="section-head reveal">
-        <span class="section-tag">Toolbox</span>
-        <h2>The stack I build with</h2>
-        <p>Deep in the Microsoft ecosystem and cloud-native tooling, with the breadth to pick the right tool for the job.</p>
+        <span class="section-tag" data-i18n="stack.tag">Toolbox</span>
+        <h2 data-i18n="stack.title">The stack I build with</h2>
+        <p data-i18n="stack.lead">Deep in the Microsoft ecosystem and cloud-native tooling, with the breadth to pick the right tool for the job.</p>
       </div>
       <div class="stack-groups">
-        <div class="stack-group reveal"><h4><span>⌨️</span> Languages &amp; Frameworks</h4><div class="chips"><span class="chip">C#</span><span class="chip">.NET / .NET Core</span><span class="chip">ASP.NET Core</span><span class="chip">Web APIs</span><span class="chip">Entity Framework Core</span><span class="chip">TypeScript</span><span class="chip">Node.js</span><span class="chip">Angular</span><span class="chip">React</span></div></div>
-        <div class="stack-group reveal"><h4><span>☁️</span> Cloud &amp; DevOps</h4><div class="chips"><span class="chip">Azure</span><span class="chip">AWS</span><span class="chip">Serverless</span><span class="chip">Azure Functions</span><span class="chip">Docker</span><span class="chip">Terraform</span><span class="chip">CI/CD</span><span class="chip">Azure DevOps</span><span class="chip">API Management</span></div></div>
-        <div class="stack-group reveal"><h4><span>🗃️</span> Data &amp; Architecture</h4><div class="chips"><span class="chip">SQL Server</span><span class="chip">Query Optimization</span><span class="chip">Cosmos DB</span><span class="chip">MongoDB</span><span class="chip">Redis</span><span class="chip">Microservices</span><span class="chip">Event-Driven</span><span class="chip">Distributed Systems</span><span class="chip">NServiceBus</span></div></div>
-        <div class="stack-group reveal"><h4><span>✨</span> Practices &amp; Craft</h4><div class="chips"><span class="chip">Clean Architecture</span><span class="chip">DDD</span><span class="chip">SOLID</span><span class="chip">CQRS</span><span class="chip">TDD</span><span class="chip">Observability</span><span class="chip">Agile / Scrum</span><span class="chip">AI-Assisted Dev</span></div></div>
+        <div class="stack-group reveal"><h4><span>⌨️</span> <span data-i18n="stack.g1">Languages &amp; Frameworks</span></h4><div class="chips"><span class="chip">C#</span><span class="chip">.NET / .NET Core</span><span class="chip">ASP.NET Core</span><span class="chip">Web APIs</span><span class="chip">Entity Framework Core</span><span class="chip">TypeScript</span><span class="chip">Node.js</span><span class="chip">Angular</span><span class="chip">React</span></div></div>
+        <div class="stack-group reveal"><h4><span>☁️</span> <span data-i18n="stack.g2">Cloud &amp; DevOps</span></h4><div class="chips"><span class="chip">Azure</span><span class="chip">AWS</span><span class="chip">Serverless</span><span class="chip">Azure Functions</span><span class="chip">Docker</span><span class="chip">Terraform</span><span class="chip">CI/CD</span><span class="chip">Azure DevOps</span><span class="chip">API Management</span></div></div>
+        <div class="stack-group reveal"><h4><span>🗃️</span> <span data-i18n="stack.g3">Data &amp; Architecture</span></h4><div class="chips"><span class="chip">SQL Server</span><span class="chip">Query Optimization</span><span class="chip">Cosmos DB</span><span class="chip">MongoDB</span><span class="chip">Redis</span><span class="chip">Microservices</span><span class="chip">Event-Driven</span><span class="chip">Distributed Systems</span><span class="chip">NServiceBus</span></div></div>
+        <div class="stack-group reveal"><h4><span>✨</span> <span data-i18n="stack.g4">Practices &amp; Craft</span></h4><div class="chips"><span class="chip">Clean Architecture</span><span class="chip">DDD</span><span class="chip">SOLID</span><span class="chip">CQRS</span><span class="chip">TDD</span><span class="chip">Observability</span><span class="chip">Agile / Scrum</span><span class="chip">AI-Assisted Dev</span></div></div>
       </div>
     </div>
   </section>
@@ -887,19 +924,19 @@
   <section id="education">
     <div class="container">
       <div class="section-head reveal">
-        <span class="section-tag">Academic foundation</span>
-        <h2>Education</h2>
-        <p>A five-year Computer Engineering degree that grounded the systems thinking behind everything I build today.</p>
+        <span class="section-tag" data-i18n="edu.tag">Academic foundation</span>
+        <h2 data-i18n="edu.title">Education</h2>
+        <p data-i18n="edu.lead">A five-year Computer Engineering degree that grounded the systems thinking behind everything I build today.</p>
       </div>
       <div class="edu-card reveal">
         <div class="edu-meta">
-          <span class="pill">🎓 Bachelor's Degree</span>
-          <span>December 2012</span>
-          <span>5-year program</span>
+          <span class="pill">🎓 <span data-i18n="edu.pill">Bachelor's Degree</span></span>
+          <span data-i18n="edu.when">December 2012</span>
+          <span data-i18n="edu.years">5-year program</span>
         </div>
-        <h3>Computer Engineering</h3>
-        <p class="school"><strong>Centro Universitário Facens</strong> · Sorocaba College of Engineering</p>
-        <p>
+        <h3 data-i18n="edu.degree">Computer Engineering</h3>
+        <p class="school" data-i18n-html="edu.school"><strong>Centro Universitário Facens</strong> · Sorocaba College of Engineering</p>
+        <p data-i18n-html="edu.bodyHtml">
           Bachelor's program specializing in <strong style="color:var(--text);font-weight:600">Systems Analysis, Development, and Architecture</strong> —
           an immersive dive into designing, developing, and managing computational systems across hardware, software,
           networks, and embedded systems. Built the foundation to create technological solutions for communications,
@@ -912,9 +949,9 @@
   <section id="certs">
     <div class="container">
       <div class="section-head reveal">
-        <span class="section-tag">Licenses &amp; certifications</span>
-        <h2>Credentials that solve real problems</h2>
-        <p>Not a badge wall — each cert maps to a delivery challenge: cloud apps, security, AI, DevOps, and how teams ship.</p>
+        <span class="section-tag" data-i18n="certs.tag">Licenses &amp; certifications</span>
+        <h2 data-i18n="certs.title">Credentials that solve real problems</h2>
+        <p data-i18n="certs.lead">Not a badge wall — each cert maps to a delivery challenge: cloud apps, security, AI, DevOps, and how teams ship.</p>
       </div>
       <div class="certs-grid">
         <article class="cert featured reveal">
@@ -924,11 +961,11 @@
           <div>
             <div class="issuer">Microsoft · Associate</div>
             <h3><a href="https://learn.microsoft.com/en-us/users/leandrocarlinimingorance-2739/credentials/dd379b8ce8959585" target="_blank" rel="noopener">Azure Developer Associate</a></h3>
-            <p class="solves"><strong>Solves:</strong> Building, deploying, and troubleshooting Azure apps that must scale, integrate APIs/storage/messaging, and stay maintainable in production.</p>
+            <p class="solves"><strong data-i18n="certs.solves">Solves:</strong> Building, deploying, and troubleshooting Azure apps that must scale, integrate APIs/storage/messaging, and stay maintainable in production.</p>
             <div class="meta">
-              <span class="tag">Active</span>
+              <span class="tag" data-i18n="certs.active">Active</span>
               <span>Issued Dec 2022</span>
-              <a href="https://learn.microsoft.com/en-us/users/leandrocarlinimingorance-2739/credentials/dd379b8ce8959585" target="_blank" rel="noopener">Show credential →</a>
+              <a href="https://learn.microsoft.com/en-us/users/leandrocarlinimingorance-2739/credentials/dd379b8ce8959585" target="_blank" rel="noopener"><span data-i18n="certs.show">Show credential →</span></a>
             </div>
           </div>
         </article>
@@ -940,10 +977,10 @@
           <div>
             <div class="issuer">Microsoft · Fundamentals</div>
             <h3><a href="https://www.credly.com/badges/ae3377eb-2bd3-4b1a-8504-cc6f70cf24b1/linked_in_profile" target="_blank" rel="noopener">Security, Compliance &amp; Identity</a></h3>
-            <p class="solves"><strong>Solves:</strong> Designing systems that protect data, manage identity correctly, and meet security &amp; compliance expectations.</p>
+            <p class="solves"><strong data-i18n="certs.solves">Solves:</strong> Designing systems that protect data, manage identity correctly, and meet security &amp; compliance expectations.</p>
             <div class="meta">
               <span>Issued Oct 2022</span>
-              <a href="https://www.credly.com/badges/ae3377eb-2bd3-4b1a-8504-cc6f70cf24b1/linked_in_profile" target="_blank" rel="noopener">Show credential →</a>
+              <a href="https://www.credly.com/badges/ae3377eb-2bd3-4b1a-8504-cc6f70cf24b1/linked_in_profile" target="_blank" rel="noopener"><span data-i18n="certs.show">Show credential →</span></a>
             </div>
           </div>
         </article>
@@ -955,10 +992,10 @@
           <div>
             <div class="issuer">Microsoft · Fundamentals</div>
             <h3><a href="https://www.credly.com/badges/57c4fb02-de74-426e-8c02-319be54708d9/linked_in_profile" target="_blank" rel="noopener">Azure AI Fundamentals</a></h3>
-            <p class="solves"><strong>Solves:</strong> Applying Azure AI services responsibly — knowing when ML/AI adds value vs. when a simpler approach wins.</p>
+            <p class="solves"><strong data-i18n="certs.solves">Solves:</strong> Applying Azure AI services responsibly — knowing when ML/AI adds value vs. when a simpler approach wins.</p>
             <div class="meta">
               <span>Issued Oct 2022</span>
-              <a href="https://www.credly.com/badges/57c4fb02-de74-426e-8c02-319be54708d9/linked_in_profile" target="_blank" rel="noopener">Show credential →</a>
+              <a href="https://www.credly.com/badges/57c4fb02-de74-426e-8c02-319be54708d9/linked_in_profile" target="_blank" rel="noopener"><span data-i18n="certs.show">Show credential →</span></a>
             </div>
           </div>
         </article>
@@ -970,10 +1007,10 @@
           <div>
             <div class="issuer">Microsoft · Fundamentals</div>
             <h3><a href="https://www.credly.com/badges/8511b505-dbb8-4875-915d-ecc471874efa/linked_in_profile" target="_blank" rel="noopener">Azure Fundamentals</a></h3>
-            <p class="solves"><strong>Solves:</strong> Choosing the right Azure services for cost, scale, and workload fit — cloud fluency before deep specialization.</p>
+            <p class="solves"><strong data-i18n="certs.solves">Solves:</strong> Choosing the right Azure services for cost, scale, and workload fit — cloud fluency before deep specialization.</p>
             <div class="meta">
               <span>Issued Jul 2020</span>
-              <a href="https://www.credly.com/badges/8511b505-dbb8-4875-915d-ecc471874efa/linked_in_profile" target="_blank" rel="noopener">Show credential →</a>
+              <a href="https://www.credly.com/badges/8511b505-dbb8-4875-915d-ecc471874efa/linked_in_profile" target="_blank" rel="noopener"><span data-i18n="certs.show">Show credential →</span></a>
             </div>
           </div>
         </article>
@@ -985,10 +1022,10 @@
           <div>
             <div class="issuer">Certiprof</div>
             <h3><a href="https://www.credly.com/badges/8f6075bc-9326-4c2d-81e4-89e833f14a38?source=linked_in_profile" target="_blank" rel="noopener">DevOps Essentials Professional</a></h3>
-            <p class="solves"><strong>Solves:</strong> Closing the build–run gap with CI/CD, automation, and delivery practices that shorten lead time.</p>
+            <p class="solves"><strong data-i18n="certs.solves">Solves:</strong> Closing the build–run gap with CI/CD, automation, and delivery practices that shorten lead time.</p>
             <div class="meta">
               <span>Issued Mar 2019</span>
-              <a href="https://www.credly.com/badges/8f6075bc-9326-4c2d-81e4-89e833f14a38?source=linked_in_profile" target="_blank" rel="noopener">Show credential →</a>
+              <a href="https://www.credly.com/badges/8f6075bc-9326-4c2d-81e4-89e833f14a38?source=linked_in_profile" target="_blank" rel="noopener"><span data-i18n="certs.show">Show credential →</span></a>
             </div>
           </div>
         </article>
@@ -1000,10 +1037,10 @@
           <div>
             <div class="issuer">Certiprof</div>
             <h3><a href="https://www.credly.com/badges/c0afbe5c-43ee-4004-b926-d2aba6366a74?source=linked_in_profile" target="_blank" rel="noopener">Scrum Foundation Professional</a></h3>
-            <p class="solves"><strong>Solves:</strong> Shipping in iterations with clear roles, feedback loops, and predictable team flow.</p>
+            <p class="solves"><strong data-i18n="certs.solves">Solves:</strong> Shipping in iterations with clear roles, feedback loops, and predictable team flow.</p>
             <div class="meta">
               <span>Issued Feb 2019</span>
-              <a href="https://www.credly.com/badges/c0afbe5c-43ee-4004-b926-d2aba6366a74?source=linked_in_profile" target="_blank" rel="noopener">Show credential →</a>
+              <a href="https://www.credly.com/badges/c0afbe5c-43ee-4004-b926-d2aba6366a74?source=linked_in_profile" target="_blank" rel="noopener"><span data-i18n="certs.show">Show credential →</span></a>
             </div>
           </div>
         </article>
@@ -1015,10 +1052,10 @@
           <div>
             <div class="issuer">Alura</div>
             <h3><a href="https://cursos.alura.com.br/user/LOMC-alura/fullCertificate/e26e6f053f4eea95979a56a9945f6959" target="_blank" rel="noopener">Angular Formation</a></h3>
-            <p class="solves"><strong>Solves:</strong> Building maintainable frontends that consume APIs cleanly and scale with the product.</p>
+            <p class="solves"><strong data-i18n="certs.solves">Solves:</strong> Building maintainable frontends that consume APIs cleanly and scale with the product.</p>
             <div class="meta">
               <span>Issued Jul 2019</span>
-              <a href="https://cursos.alura.com.br/user/LOMC-alura/fullCertificate/e26e6f053f4eea95979a56a9945f6959" target="_blank" rel="noopener">Show credential →</a>
+              <a href="https://cursos.alura.com.br/user/LOMC-alura/fullCertificate/e26e6f053f4eea95979a56a9945f6959" target="_blank" rel="noopener"><span data-i18n="certs.show">Show credential →</span></a>
             </div>
           </div>
         </article>
@@ -1030,10 +1067,10 @@
           <div>
             <div class="issuer">Certiprof</div>
             <h3><a href="https://www.credly.com/badges/07050fb7-966d-4696-93b9-005568441c1d?source=linked_in_profile" target="_blank" rel="noopener">Continuous Learner</a></h3>
-            <p class="solves"><strong>Solves:</strong> Staying current as stacks and practices evolve — continuous skill growth as a delivery habit.</p>
+            <p class="solves"><strong data-i18n="certs.solves">Solves:</strong> Staying current as stacks and practices evolve — continuous skill growth as a delivery habit.</p>
             <div class="meta">
               <span>Issued Jan 2019</span>
-              <a href="https://www.credly.com/badges/07050fb7-966d-4696-93b9-005568441c1d?source=linked_in_profile" target="_blank" rel="noopener">Show credential →</a>
+              <a href="https://www.credly.com/badges/07050fb7-966d-4696-93b9-005568441c1d?source=linked_in_profile" target="_blank" rel="noopener"><span data-i18n="certs.show">Show credential →</span></a>
             </div>
           </div>
         </article>
@@ -1044,17 +1081,17 @@
   <section id="principles">
     <div class="container">
       <div class="section-head reveal">
-        <span class="section-tag">How I work</span>
-        <h2>Engineering principles I stand by</h2>
-        <p>The mindset behind the code — what keeps systems trustworthy and teams moving fast.</p>
+        <span class="section-tag" data-i18n="principles.tag">How I work</span>
+        <h2 data-i18n="principles.title">Engineering principles I stand by</h2>
+        <p data-i18n="principles.lead">The mindset behind the code — what keeps systems trustworthy and teams moving fast.</p>
       </div>
       <div class="principles">
-        <div class="principle reveal"><div class="n">/ 01</div><h4>Simplicity is a feature</h4><p>The best architecture is the simplest one that solves the problem well. Complexity is a cost you pay forever.</p></div>
-        <div class="principle reveal"><div class="n">/ 02</div><h4>Design for change</h4><p>Requirements evolve. Clear boundaries, clean domains, and loose coupling keep systems adaptable, not brittle.</p></div>
-        <div class="principle reveal"><div class="n">/ 03</div><h4>Reliability is non-negotiable</h4><p>Testing, monitoring, and observability aren't extras — they're how software earns trust in production.</p></div>
-        <div class="principle reveal"><div class="n">/ 04</div><h4>Business value leads</h4><p>Every technical decision serves an outcome. I translate business goals into systems that actually deliver them.</p></div>
-        <div class="principle reveal"><div class="n">/ 05</div><h4>Lift the whole team</h4><p>Mentoring, reviews, and shared standards make everyone better — durable results come from strong teams.</p></div>
-        <div class="principle reveal"><div class="n">/ 06</div><h4>Never stop learning</h4><p>From cloud-native to AI-assisted engineering, staying curious is how I keep delivering at the edge.</p></div>
+        <div class="principle reveal"><div class="n">/ 01</div><h4 data-i18n="p1.t">Simplicity is a feature</h4><p data-i18n="p1.p">The best architecture is the simplest one that solves the problem well. Complexity is a cost you pay forever.</p></div>
+        <div class="principle reveal"><div class="n">/ 02</div><h4 data-i18n="p2.t">Design for change</h4><p data-i18n="p2.p">Requirements evolve. Clear boundaries, clean domains, and loose coupling keep systems adaptable, not brittle.</p></div>
+        <div class="principle reveal"><div class="n">/ 03</div><h4 data-i18n="p3.t">Reliability is non-negotiable</h4><p data-i18n="p3.p">Testing, monitoring, and observability aren't extras — they're how software earns trust in production.</p></div>
+        <div class="principle reveal"><div class="n">/ 04</div><h4 data-i18n="p4.t">Business value leads</h4><p data-i18n="p4.p">Every technical decision serves an outcome. I translate business goals into systems that actually deliver them.</p></div>
+        <div class="principle reveal"><div class="n">/ 05</div><h4 data-i18n="p5.t">Lift the whole team</h4><p data-i18n="p5.p">Mentoring, reviews, and shared standards make everyone better — durable results come from strong teams.</p></div>
+        <div class="principle reveal"><div class="n">/ 06</div><h4 data-i18n="p6.t">Never stop learning</h4><p data-i18n="p6.p">From cloud-native to AI-assisted engineering, staying curious is how I keep delivering at the edge.</p></div>
       </div>
     </div>
   </section>
@@ -1062,10 +1099,10 @@
   <section id="contact">
     <div class="container">
       <div class="contact-card reveal">
-        <h2>Let's build something <span class="gradient-text">worth talking about</span></h2>
-        <p>Open to staff and senior engineering, architecture, and technical leadership opportunities. Reach out — happy to share a résumé or dive into the details.</p>
+        <h2 data-i18n-html="contact.titleHtml">Let's build something <span class="gradient-text">worth talking about</span></h2>
+        <p data-i18n="contact.lead">Open to staff and senior engineering, architecture, and technical leadership opportunities. Reach out — happy to share a résumé or dive into the details.</p>
         <div class="contact-actions">
-          <a href="mailto:leandrocarlini@gmail.com" class="btn btn-primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg> Email me</a>
+          <a href="mailto:leandrocarlini@gmail.com" class="btn btn-primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span data-i18n="contact.email">Email me</span></a>
           <a href="https://www.linkedin.com/in/leandro-carlini/" class="btn btn-ghost" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg> LinkedIn</a>
           <a href="https://github.com/lcarlini" class="btn btn-ghost" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.79 2.73 1.27 3.4.97.1-.76.4-1.27.73-1.56-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg> GitHub</a>
         </div>
@@ -1075,15 +1112,16 @@
 
   <footer>
     <div class="container footer-inner">
-      <span>© <span id="year"></span> Leandro Carlini Mingorance · Crafted with care &amp; caffeine.</span>
+      <span>© <span id="year"></span> Leandro Carlini Mingorance · <span data-i18n="footer.crafted">Crafted with care &amp; caffeine.</span></span>
       <div class="footer-links">
         <a href="https://github.com/lcarlini" target="_blank" rel="noopener">GitHub</a>
         <a href="https://www.linkedin.com/in/leandro-carlini/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="mailto:leandrocarlini@gmail.com">Email</a>
+        <a href="mailto:leandrocarlini@gmail.com" data-i18n="footer.email">Email</a>
       </div>
     </div>
   </footer>
 
+  <script src="assets/i18n.js"></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
 
@@ -1113,18 +1151,120 @@
       spot.style.setProperty('--my', e.clientY + 'px');
     });
 
-    // Typing effect
-    const roles = ['Staff Software Engineer', 'Senior Software Engineer', 'Solutions Architect', 'Tech Lead', 'Cloud & DevOps Engineer', 'AI-Assisted Builder'];
+    // Typing effect + i18n
+    const rolesEn = ['Staff Software Engineer', 'Senior Software Engineer', 'Solutions Architect', 'Tech Lead', 'Cloud & DevOps Engineer', 'AI-Assisted Builder'];
+    let rolesList = rolesEn.slice();
     const typed = document.getElementById('typed');
-    let ri = 0, ci = 0, deleting = false;
-    (function type() {
-      const word = roles[ri];
+    let ri = 0, ci = 0, deleting = false, typeTimer = null;
+    function typeTick() {
+      const word = rolesList[ri] || '';
       typed.textContent = word.slice(0, ci);
-      if (!deleting && ci < word.length) { ci++; setTimeout(type, 65); }
-      else if (!deleting && ci === word.length) { deleting = true; setTimeout(type, 1600); }
-      else if (deleting && ci > 0) { ci--; setTimeout(type, 32); }
-      else { deleting = false; ri = (ri + 1) % roles.length; setTimeout(type, 320); }
-    })();
+      if (!deleting && ci < word.length) { ci++; typeTimer = setTimeout(typeTick, 65); }
+      else if (!deleting && ci === word.length) { deleting = true; typeTimer = setTimeout(typeTick, 1600); }
+      else if (deleting && ci > 0) { ci--; typeTimer = setTimeout(typeTick, 32); }
+      else { deleting = false; ri = (ri + 1) % rolesList.length; typeTimer = setTimeout(typeTick, 320); }
+    }
+    typeTick();
+
+    function resetTyping(nextRoles) {
+      clearTimeout(typeTimer);
+      rolesList = nextRoles.slice();
+      ri = 0; ci = 0; deleting = false;
+      typed.textContent = '';
+      typeTick();
+    }
+
+    // Projects show more / less
+    const projectsList = document.querySelector('.projects-list');
+    const projectsToggle = document.getElementById('projectsToggle');
+    const projectsToggleLabel = projectsToggle && projectsToggle.querySelector('[data-i18n]');
+    let projectsExpanded = false;
+    let currentLang = 'en';
+
+    function projectsToggleKey() {
+      return projectsExpanded ? 'projects.showLess' : 'projects.showMore';
+    }
+
+    function syncProjectsToggleLabel() {
+      if (!projectsToggleLabel) return;
+      const key = projectsToggleKey();
+      projectsToggleLabel.setAttribute('data-i18n', key);
+      const val = currentLang === 'en'
+        ? (key === 'projects.showMore' ? 'Show more projects' : 'Show fewer projects')
+        : (dicts[currentLang] && dicts[currentLang][key]);
+      if (val != null) projectsToggleLabel.textContent = val;
+      // keep enCache in sync for language restores
+      enCache.text[key] = currentLang === 'en' ? val : enCache.text[key];
+    }
+
+    if (projectsToggle && projectsList) {
+      projectsToggle.addEventListener('click', () => {
+        projectsExpanded = !projectsExpanded;
+        projectsList.classList.toggle('is-expanded', projectsExpanded);
+        projectsToggle.setAttribute('aria-expanded', projectsExpanded ? 'true' : 'false');
+        syncProjectsToggleLabel();
+        if (projectsExpanded) {
+          const firstExtra = projectsList.querySelector('.project:nth-child(4)');
+          if (firstExtra) firstExtra.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      });
+    }
+
+    // --- Language switcher ---
+    const enCache = { text: {}, html: {} };
+    document.querySelectorAll('[data-i18n]').forEach((el) => {
+      enCache.text[el.getAttribute('data-i18n')] = el.textContent;
+    });
+    document.querySelectorAll('[data-i18n-html]').forEach((el) => {
+      enCache.html[el.getAttribute('data-i18n-html')] = el.innerHTML;
+    });
+    enCache.text['projects.showMore'] = 'Show more projects';
+    enCache.text['projects.showLess'] = 'Show fewer projects';
+
+    const dicts = { pt: window.pt, es: window.es };
+    const htmlLang = { en: 'en', pt: 'pt-BR', es: 'es' };
+
+    function applyLanguage(lang) {
+      currentLang = lang;
+      const isEn = lang === 'en';
+      document.documentElement.lang = htmlLang[lang] || 'en';
+
+      document.querySelectorAll('[data-i18n]').forEach((el) => {
+        const key = el.getAttribute('data-i18n');
+        const val = isEn ? enCache.text[key] : (dicts[lang] && dicts[lang][key]);
+        if (val != null) el.textContent = val;
+      });
+      document.querySelectorAll('[data-i18n-html]').forEach((el) => {
+        const key = el.getAttribute('data-i18n-html');
+        const val = isEn ? enCache.html[key] : (dicts[lang] && dicts[lang][key]);
+        if (val != null) el.innerHTML = val;
+      });
+      document.querySelectorAll('[data-i18n-aria]').forEach((el) => {
+        const key = el.getAttribute('data-i18n-aria');
+        const val = isEn ? 'Language' : (dicts[lang] && dicts[lang][key]);
+        if (val) el.setAttribute('aria-label', val);
+      });
+
+      document.querySelectorAll('.lang-switch [data-lang]').forEach((btn) => {
+        const on = btn.getAttribute('data-lang') === lang;
+        btn.classList.toggle('active', on);
+        btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+
+      syncProjectsToggleLabel();
+
+      const nextRoles = isEn ? rolesEn : ((window.roles && window.roles[lang]) || rolesEn);
+      resetTyping(nextRoles);
+      try { localStorage.setItem('portfolio-lang', lang); } catch (_) {}
+    }
+
+    document.querySelectorAll('.lang-switch [data-lang]').forEach((btn) => {
+      btn.addEventListener('click', () => applyLanguage(btn.getAttribute('data-lang')));
+    });
+
+    let saved = 'en';
+    try { saved = localStorage.getItem('portfolio-lang') || 'en'; } catch (_) {}
+    if (saved !== 'en' && dicts[saved]) applyLanguage(saved);
 
     // Reveal on scroll
     const io = new IntersectionObserver((entries) => {
