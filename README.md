@@ -108,6 +108,89 @@ A five-year immersion in designing, developing, and managing computational syste
 
 <br>
 
+## 🏅 Certifications
+
+Credentials that map to real delivery problems — cloud apps, security, AI, DevOps, and team flow.
+
+<table>
+  <tr>
+    <td width="90" align="center" valign="top">
+      <img src="assets/certs/ms-associate.svg" width="72" alt="Microsoft Associate" />
+    </td>
+    <td valign="top">
+      <strong>Microsoft Certified: Azure Developer Associate</strong> · Microsoft · Dec 2022 – Dec 2026<br>
+      <em>Solves:</em> Building, deploying, and troubleshooting Azure apps that must scale, integrate, and stay maintainable in production.<br>
+      <sub>Credential ID <code>DD379B8CE8959585</code></sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="90" align="center" valign="top">
+      <img src="assets/certs/ms-fundamentals.svg" width="72" alt="Microsoft Fundamentals" />
+    </td>
+    <td valign="top">
+      <strong>Microsoft Certified: Security, Compliance, and Identity Fundamentals</strong> · Microsoft · Oct 2022<br>
+      <em>Solves:</em> Designing systems that protect data, manage identity correctly, and meet security &amp; compliance expectations.
+    </td>
+  </tr>
+  <tr>
+    <td width="90" align="center" valign="top">
+      <img src="assets/certs/ms-fundamentals.svg" width="72" alt="Microsoft Fundamentals" />
+    </td>
+    <td valign="top">
+      <strong>Microsoft Certified: Azure AI Fundamentals</strong> · Microsoft · Oct 2022<br>
+      <em>Solves:</em> Applying Azure AI services responsibly — knowing when ML/AI adds value vs. when a simpler approach wins.
+    </td>
+  </tr>
+  <tr>
+    <td width="90" align="center" valign="top">
+      <img src="assets/certs/ms-fundamentals.svg" width="72" alt="Microsoft Fundamentals" />
+    </td>
+    <td valign="top">
+      <strong>Microsoft Certified: Azure Fundamentals</strong> · Microsoft · Jul 2020<br>
+      <em>Solves:</em> Choosing the right Azure services for cost, scale, and workload fit — cloud fluency before deep specialization.
+    </td>
+  </tr>
+  <tr>
+    <td width="90" align="center" valign="top">
+      <img src="assets/certs/certiprof.svg" width="72" alt="Certiprof" />
+    </td>
+    <td valign="top">
+      <strong>DevOps Essentials Professional Certificate</strong> · Certiprof · Mar 2019<br>
+      <em>Solves:</em> Closing the build–run gap with CI/CD, automation, and delivery practices that shorten lead time.
+    </td>
+  </tr>
+  <tr>
+    <td width="90" align="center" valign="top">
+      <img src="assets/certs/scrum.svg" width="72" alt="Scrum" />
+    </td>
+    <td valign="top">
+      <strong>Scrum Foundation Professional Certificate</strong> · Certiprof · Feb 2019<br>
+      <em>Solves:</em> Shipping in iterations with clear roles, feedback loops, and predictable team flow.
+    </td>
+  </tr>
+  <tr>
+    <td width="90" align="center" valign="top">
+      <img src="assets/certs/alura.svg" width="72" alt="Alura" />
+    </td>
+    <td valign="top">
+      <strong>Angular Formation</strong> · Alura · Jul 2019<br>
+      <em>Solves:</em> Building maintainable frontends that consume APIs cleanly and scale with the product.<br>
+      <sub>Credential ID <code>e26e6f053f4eea95979a56a9945f6959</code></sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="90" align="center" valign="top">
+      <img src="assets/certs/certiprof.svg" width="72" alt="Certiprof" />
+    </td>
+    <td valign="top">
+      <strong>CertiProf® Continuous Learner</strong> · Certiprof · Jan 2019<br>
+      <em>Solves:</em> Staying current as stacks and practices evolve — continuous skill growth as a delivery habit.
+    </td>
+  </tr>
+</table>
+
+<br>
+
 ## 📈 GitHub Activity
 
 <div align="center">
